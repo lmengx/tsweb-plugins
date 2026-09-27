@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-09-26T17:06:54.740Z",
+  "updated": "2026-09-27T04:45:48.014Z",
   "mirrors": [
     {
       "id": "github",
@@ -19,6 +19,20 @@
   ],
   "packages": [
     {
+      "name": "online-stats",
+      "version": "0.1.0",
+      "description": "在线统计插件：当前在线 / 历史趋势 / 在线玩家 / 单玩家统计。对外提供 ctx.onlineStats 服务，供其他插件 inject 依赖调用",
+      "author": null,
+      "bundled": false,
+      "hasClient": true,
+      "dll": [],
+      "deploy": "all",
+      "url": "packages/online-stats-0.1.0.tgz",
+      "sha256": "a16ecb978034a1ba8ac869ae3a15e34c431ea81972c8926658cb3a7781a19498",
+      "size": 12207,
+      "publishedAt": "2026-09-27T04:45:47.981Z"
+    },
+    {
       "name": "players",
       "version": "1.0.3",
       "description": "玩家管理：属性查询 / JSON Patch 编辑 / 背包全量 / 管理操作（踢出/封禁/清角色/改密码/改组）",
@@ -28,6 +42,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "deploy": "all",
       "url": "packages/players-1.0.3.tgz",
       "sha256": "175e60e1dc5e7adc49df83b6ceeb43113675ffc7bcbf2520492b8864d26c128d",
       "size": 39694,
