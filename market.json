@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-09-27T04:45:48.014Z",
+  "updated": "2026-09-27T07:27:38.353Z",
   "mirrors": [
     {
       "id": "github",
@@ -20,17 +20,19 @@
   "packages": [
     {
       "name": "online-stats",
-      "version": "0.1.0",
-      "description": "在线统计插件：当前在线 / 历史趋势 / 在线玩家 / 单玩家统计。对外提供 ctx.onlineStats 服务，供其他插件 inject 依赖调用",
+      "version": "0.2.0",
+      "description": "在线统计插件：当前在线 / 逐时快照 / 累计游玩时长 / 排行榜 / 玩家日历。含游戏服半 OnlineStats.dll（进程内按分钟累计并落库），对外提供 ctx.onlineStats 服务供其他插件 inject 调用",
       "author": null,
       "bundled": false,
       "hasClient": true,
-      "dll": [],
+      "dll": [
+        "./plugin/*.dll"
+      ],
       "deploy": "all",
-      "url": "packages/online-stats-0.1.0.tgz",
-      "sha256": "a16ecb978034a1ba8ac869ae3a15e34c431ea81972c8926658cb3a7781a19498",
-      "size": 12207,
-      "publishedAt": "2026-09-27T04:45:47.981Z"
+      "url": "packages/online-stats-0.2.0.tgz",
+      "sha256": "cf5334728e8e7e94a6ac5555c29fe702bff9235e097af7a761e3e659a4d0e933",
+      "size": 27865,
+      "publishedAt": "2026-09-27T07:27:38.317Z"
     },
     {
       "name": "players",
