@@ -19,7 +19,7 @@ README.md
 
 ```
 <name>/
-├── package.json        { name, version, tsweb: { autoload, bundled, client, dll } }
+├── package.json        { name, version, tsweb: { autoload, bundled, client, dll, deploy } }
 ├── index.js            cordis 插件对象（export const name + export async function apply）
 ├── client/             前端半（可选）
 └── plugin/*.dll        C# 游戏服端 DLL（可选，安装后下发到 TShock 服务器热加载）
@@ -48,6 +48,7 @@ README.md
       "bundled": false,          // 是否属于"自带插件"（自带插件随宿主发行，一般不走本仓库）
       "hasClient": true,         // 是否含前端半
       "dll": ["./plugin/*.dll"], // C# 半声明（安装后用于下发到游戏服）
+      "deploy": "all",           // DLL 下发模式（三态，缺省 all）：all=自动全量 / ask=安装时弹窗选 / manual=静默不下发
       "url": "packages/players-1.0.0.tgz",
       "sha256": "…",             // 整包哈希，客户端下载后强制校验
       "size": 39514,
