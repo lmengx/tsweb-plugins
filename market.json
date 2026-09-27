@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-09-27T08:21:28.090Z",
+  "updated": "2026-09-27T12:04:33.278Z",
   "mirrors": [
     {
       "id": "github",
@@ -36,7 +36,7 @@
     },
     {
       "name": "players",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "玩家管理：属性查询 / JSON Patch 编辑 / 背包全量 / 管理操作（踢出/封禁/清角色/改密码/改组）+ 玩家详情页扩展点（供其它插件挂载自定义区块）",
       "author": null,
       "bundled": false,
@@ -45,10 +45,10 @@
         "./plugin/*.dll"
       ],
       "deploy": "all",
-      "url": "packages/players-1.0.4.tgz",
-      "sha256": "2b2eef316277668c05ce2dfa17e571fe1f0aad3d66566dc619a1cd2f79ed0d73",
-      "size": 40488,
-      "publishedAt": "2026-09-27T08:21:28.015Z"
+      "url": "packages/players-1.0.5.tgz",
+      "sha256": "3313c6bcfa19b9419c2138b960a8fe1cd57cb017e5b0e96087f672f427698844",
+      "size": 40847,
+      "publishedAt": "2026-09-27T12:04:33.181Z"
     }
   ]
 }
