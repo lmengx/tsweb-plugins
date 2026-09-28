@@ -23,6 +23,12 @@
       "version": "0.2.0",
       "description": "在线统计插件：当前在线 / 逐时快照 / 累计游玩时长 / 排行榜 / 玩家日历。含游戏服半 OnlineStats.dll（进程内按分钟累计并落库），对外提供 ctx.onlineStats 服务供其他插件 inject 调用",
       "author": null,
+      "tags": [
+        "数据统计",
+        "排行榜",
+        "在线时长",
+        "玩家日历"
+      ],
       "bundled": false,
       "hasClient": true,
       "dll": [
@@ -33,22 +39,6 @@
       "sha256": "cf5334728e8e7e94a6ac5555c29fe702bff9235e097af7a761e3e659a4d0e933",
       "size": 27865,
       "publishedAt": "2026-09-27T07:27:38.317Z"
-    },
-    {
-      "name": "players",
-      "version": "1.0.5",
-      "description": "玩家管理：属性查询 / JSON Patch 编辑 / 背包全量 / 管理操作（踢出/封禁/清角色/改密码/改组）+ 玩家详情页扩展点（供其它插件挂载自定义区块）",
-      "author": null,
-      "bundled": false,
-      "hasClient": true,
-      "dll": [
-        "./plugin/*.dll"
-      ],
-      "deploy": "all",
-      "url": "packages/players-1.0.5.tgz",
-      "sha256": "3313c6bcfa19b9419c2138b960a8fe1cd57cb017e5b0e96087f672f427698844",
-      "size": 40847,
-      "publishedAt": "2026-09-27T12:04:33.181Z"
     }
   ]
 }

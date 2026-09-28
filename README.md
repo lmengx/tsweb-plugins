@@ -42,16 +42,18 @@ README.md
   ],
   "packages": [
     {
-      "name": "players",
-      "version": "1.0.0",
+      "name": "online-stats",
+      "version": "0.2.0",
       "description": "…",
+      "author": null,             // 可选
+      "tags": ["数据统计", "排行榜"], // 分类标签：插件在 package.json 用 tsweb.tags 声明，发布时写入索引
       "bundled": false,          // 是否属于"自带插件"（自带插件随宿主发行，一般不走本仓库）
       "hasClient": true,         // 是否含前端半
       "dll": ["./plugin/*.dll"], // C# 半声明（安装后用于下发到游戏服）
       "deploy": "all",           // DLL 下发模式（三态，缺省 all）：all=自动全量 / ask=安装时弹窗选 / manual=静默不下发
-      "url": "packages/players-1.0.0.tgz",
+      "url": "packages/online-stats-0.2.0.tgz",
       "sha256": "…",             // 整包哈希，客户端下载后强制校验
-      "size": 39514,
+      "size": 27865,
       "publishedAt": "…"
     }
   ]
