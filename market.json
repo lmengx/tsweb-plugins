@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-09-29T09:09:45.181Z",
+  "updated": "2026-09-29T09:29:05.488Z",
   "mirrors": [
     {
       "id": "github",
@@ -19,15 +19,17 @@
       "version": "0.1.2",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底与离线本地目录模式）",
       "author": null,
-      "tags": [],
+      "tags": [
+        "管理工具"
+      ],
       "bundled": true,
       "hasClient": true,
       "dll": [],
       "deploy": "all",
       "url": "packages/market-0.1.2.tgz",
-      "sha256": "6ead8193edd7ff6833cac58faefee625cd2756e6e050df56fb0c7ededf0ce0b2",
-      "size": 21635,
-      "publishedAt": "2026-09-29T07:16:01.354Z"
+      "sha256": "e481fbc8290c5ab469707c53c040f68d7559843b2abb0893f123c4ca876a6755",
+      "size": 21659,
+      "publishedAt": "2026-09-29T09:29:00.629Z"
     },
     {
       "name": "online-stats",
@@ -35,10 +37,7 @@
       "description": "在线统计插件：当前在线 / 逐时快照 / 累计游玩时长 / 排行榜 / 玩家日历。含游戏服半 OnlineStats.dll（进程内按分钟累计并落库），对外提供 ctx.onlineStats 服务供其他插件 inject 调用",
       "author": null,
       "tags": [
-        "数据统计",
-        "排行榜",
-        "在线时长",
-        "玩家日历"
+        "数据统计"
       ],
       "bundled": false,
       "hasClient": true,
@@ -47,9 +46,9 @@
       ],
       "deploy": "all",
       "url": "packages/online-stats-0.2.0.tgz",
-      "sha256": "8704d32edacc469b34ed1fb216a7720e6b46ab5df9a9b0f202d15843b6467beb",
-      "size": 27899,
-      "publishedAt": "2026-09-28T15:54:52.378Z"
+      "sha256": "9efb83ba35aabbe379e2ed09ff74c585d956df8440c58619c0f0c48f95a0287c",
+      "size": 27840,
+      "publishedAt": "2026-09-29T09:29:03.245Z"
     },
     {
       "name": "patch1458",
@@ -57,10 +56,7 @@
       "description": "1.4.5.8 内容兼容补丁：向 TShock Bouncer 的 NPC buff 白名单注入 1.4.5.8 新增的 5 个 NPC debuff（强酸 / 叶绿孢子 / 催化毒液 / 蓝闪电 / 红闪电），修复使用新内容（催化手环等）的合法玩家被误踢。含游戏服半 Patch1458.dll；deploy=ask，安装时弹窗选择下发到哪些服务器",
       "author": null,
       "tags": [
-        "兼容补丁",
-        "误踢修复",
-        "反作弊",
-        "1.4.5.8"
+        "漏洞修复"
       ],
       "bundled": false,
       "hasClient": false,
@@ -69,9 +65,9 @@
       ],
       "deploy": "ask",
       "url": "packages/patch1458-1.0.0.tgz",
-      "sha256": "fec15e901369f8244ae75d304ccf8ada6dd6c8b96ee70eadec7910bc5d5e28a2",
-      "size": 11118,
-      "publishedAt": "2026-09-29T09:09:45.141Z"
+      "sha256": "b5d2f8cbf3947cc615b5a053244b356cc6e1daaa64971f68d22daa0511bd3667",
+      "size": 11106,
+      "publishedAt": "2026-09-29T09:29:05.368Z"
     }
   ]
 }
