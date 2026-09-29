@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-09-29T07:16:01.387Z",
+  "updated": "2026-09-29T09:09:45.181Z",
   "mirrors": [
     {
       "id": "github",
@@ -50,6 +50,28 @@
       "sha256": "8704d32edacc469b34ed1fb216a7720e6b46ab5df9a9b0f202d15843b6467beb",
       "size": 27899,
       "publishedAt": "2026-09-28T15:54:52.378Z"
+    },
+    {
+      "name": "patch1458",
+      "version": "1.0.0",
+      "description": "1.4.5.8 内容兼容补丁：向 TShock Bouncer 的 NPC buff 白名单注入 1.4.5.8 新增的 5 个 NPC debuff（强酸 / 叶绿孢子 / 催化毒液 / 蓝闪电 / 红闪电），修复使用新内容（催化手环等）的合法玩家被误踢。含游戏服半 Patch1458.dll；deploy=ask，安装时弹窗选择下发到哪些服务器",
+      "author": null,
+      "tags": [
+        "兼容补丁",
+        "误踢修复",
+        "反作弊",
+        "1.4.5.8"
+      ],
+      "bundled": false,
+      "hasClient": false,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "deploy": "ask",
+      "url": "packages/patch1458-1.0.0.tgz",
+      "sha256": "fec15e901369f8244ae75d304ccf8ada6dd6c8b96ee70eadec7910bc5d5e28a2",
+      "size": 11118,
+      "publishedAt": "2026-09-29T09:09:45.141Z"
     }
   ]
 }
