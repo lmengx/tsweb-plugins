@@ -2,15 +2,11 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-09-27T12:04:33.278Z",
+  "updated": "2026-09-29T07:16:01.387Z",
   "mirrors": [
     {
       "id": "github",
       "base": "https://raw.githubusercontent.com/{repo}/{branch}"
-    },
-    {
-      "id": "gitee",
-      "base": "https://gitee.com/{repo}/raw/{branch}"
     },
     {
       "id": "ghproxy",
@@ -18,6 +14,21 @@
     }
   ],
   "packages": [
+    {
+      "name": "market",
+      "version": "0.1.2",
+      "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底与离线本地目录模式）",
+      "author": null,
+      "tags": [],
+      "bundled": true,
+      "hasClient": true,
+      "dll": [],
+      "deploy": "all",
+      "url": "packages/market-0.1.2.tgz",
+      "sha256": "6ead8193edd7ff6833cac58faefee625cd2756e6e050df56fb0c7ededf0ce0b2",
+      "size": 21635,
+      "publishedAt": "2026-09-29T07:16:01.354Z"
+    },
     {
       "name": "online-stats",
       "version": "0.2.0",
@@ -36,9 +47,9 @@
       ],
       "deploy": "all",
       "url": "packages/online-stats-0.2.0.tgz",
-      "sha256": "cf5334728e8e7e94a6ac5555c29fe702bff9235e097af7a761e3e659a4d0e933",
-      "size": 27865,
-      "publishedAt": "2026-09-27T07:27:38.317Z"
+      "sha256": "8704d32edacc469b34ed1fb216a7720e6b46ab5df9a9b0f202d15843b6467beb",
+      "size": 27899,
+      "publishedAt": "2026-09-28T15:54:52.378Z"
     }
   ]
 }
