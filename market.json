@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-01T11:37:30.603Z",
+  "updated": "2026-10-01T12:17:59.960Z",
   "mirrors": [
     {
       "id": "github",
@@ -71,7 +71,7 @@
     },
     {
       "name": "qq-bind",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "description": "QQ 绑定基础件：台账（唯一权威）+ 接入层（适配器/能力注册表）+ 游戏服半 QqBind.dll。Koishi 只是内置 legacy-http 适配器之一，核心不认识任何机器人框架",
       "author": null,
       "tags": [
@@ -83,10 +83,10 @@
         "./plugin/*.dll"
       ],
       "deploy": "all",
-      "url": "packages/qq-bind-0.2.0.tgz",
-      "sha256": "6816d1b6706a49eb4cf979f513eb2423932d4507587b06d5712971bc3476925f",
-      "size": 105324,
-      "publishedAt": "2026-10-01T11:37:30.565Z"
+      "url": "packages/qq-bind-0.2.1.tgz",
+      "sha256": "54bdeaa44865dfccf737d8af64f4903828f716a5e733420d6b8de11c6e6d5b96",
+      "size": 108081,
+      "publishedAt": "2026-10-01T12:17:59.924Z"
     }
   ]
 }
