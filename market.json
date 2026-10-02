@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-01T12:17:59.960Z",
+  "updated": "2026-10-02T13:53:34.987Z",
   "mirrors": [
     {
       "id": "github",
@@ -14,6 +14,23 @@
     }
   ],
   "packages": [
+    {
+      "name": "legacy-import",
+      "version": "0.1.0",
+      "description": "导入旧版数据容器：模块注册表（ctx.legacyImport.registerModule，供其它插件贡献自己的导入模块）+ 内置「旧版 QQ 台账」模块（qq-ledger：本件负责解析旧文件格式，落库交回 qq-bind 的台账契约，绝不绕过其原子落盘与快照下发）",
+      "author": null,
+      "tags": [
+        "QQ管理"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "dll": [],
+      "deploy": "all",
+      "url": "packages/legacy-import-0.1.0.tgz",
+      "sha256": "3810b6c1afe433b80c014e11b2c85ec7338b14803e3d79c22a5b2a784a3114de",
+      "size": 49179,
+      "publishedAt": "2026-10-02T13:53:34.945Z"
+    },
     {
       "name": "market",
       "version": "0.1.3",
@@ -71,11 +88,12 @@
     },
     {
       "name": "qq-bind",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "description": "QQ 绑定基础件：台账（唯一权威）+ 接入层（适配器/能力注册表）+ 游戏服半 QqBind.dll。Koishi 只是内置 legacy-http 适配器之一，核心不认识任何机器人框架",
       "author": null,
       "tags": [
-        "管理工具"
+        "管理工具",
+        "QQ管理"
       ],
       "bundled": false,
       "hasClient": true,
@@ -83,10 +101,29 @@
         "./plugin/*.dll"
       ],
       "deploy": "all",
-      "url": "packages/qq-bind-0.2.1.tgz",
-      "sha256": "54bdeaa44865dfccf737d8af64f4903828f716a5e733420d6b8de11c6e6d5b96",
-      "size": 108081,
-      "publishedAt": "2026-10-01T12:17:59.924Z"
+      "url": "packages/qq-bind-0.3.0.tgz",
+      "sha256": "099c1784f1d733f8d7884af5de9459046535dee2b859c34a7cfd94b4e97c7f93",
+      "size": 130097,
+      "publishedAt": "2026-10-02T13:53:33.390Z"
+    },
+    {
+      "name": "qq-promotion",
+      "version": "0.1.0",
+      "description": "QQ 绑定后自动晋升（独立插件）：宿主半负责配置存储与下发，游戏服半 QqPromotion.dll 在玩家登录时只读 qq-bind 的绑定快照文件识别已绑定账号并晋升。不引用 QqBind.dll，不另存绑定关系",
+      "author": null,
+      "tags": [
+        "QQ管理"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "deploy": "all",
+      "url": "packages/qq-promotion-0.1.0.tgz",
+      "sha256": "dc3339a5e2bfb736c0071028d673d621d917346fb027405aeab9c2406d0c5c83",
+      "size": 69287,
+      "publishedAt": "2026-10-02T13:53:34.728Z"
     }
   ]
 }
