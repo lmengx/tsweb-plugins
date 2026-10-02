@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-02T13:53:34.987Z",
+  "updated": "2026-10-02T14:59:54.378Z",
   "mirrors": [
     {
       "id": "github",
@@ -87,6 +87,25 @@
       "publishedAt": "2026-09-29T09:29:05.368Z"
     },
     {
+      "name": "promotion",
+      "version": "0.1.0",
+      "description": "权限提升（独立插件）：一块配置同时管两种依据——QQ 绑定提升（玩家登录时识别 qq-bind 落盘的绑定快照）与游玩时长提升（每分钟检查 player_daily_stat 的累计时长），共享忽略组保护名单。宿主半负责配置存储与下发，游戏服半 Promotion.dll 执行改组；不累加游玩时长（那是 online-stats 的职责）",
+      "author": null,
+      "tags": [
+        "QQ管理"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "deploy": "all",
+      "url": "packages/promotion-0.1.0.tgz",
+      "sha256": "5ca5ac463e1b881c6058157b65590b9835de783dc0cce90c8d8d76d9fa05c0f8",
+      "size": 114755,
+      "publishedAt": "2026-10-02T14:59:54.166Z"
+    },
+    {
       "name": "qq-bind",
       "version": "0.3.0",
       "description": "QQ 绑定基础件：台账（唯一权威）+ 接入层（适配器/能力注册表）+ 游戏服半 QqBind.dll。Koishi 只是内置 legacy-http 适配器之一，核心不认识任何机器人框架",
@@ -105,25 +124,6 @@
       "sha256": "099c1784f1d733f8d7884af5de9459046535dee2b859c34a7cfd94b4e97c7f93",
       "size": 130097,
       "publishedAt": "2026-10-02T13:53:33.390Z"
-    },
-    {
-      "name": "qq-promotion",
-      "version": "0.1.0",
-      "description": "QQ 绑定后自动晋升（独立插件）：宿主半负责配置存储与下发，游戏服半 QqPromotion.dll 在玩家登录时只读 qq-bind 的绑定快照文件识别已绑定账号并晋升。不引用 QqBind.dll，不另存绑定关系",
-      "author": null,
-      "tags": [
-        "QQ管理"
-      ],
-      "bundled": false,
-      "hasClient": true,
-      "dll": [
-        "./plugin/*.dll"
-      ],
-      "deploy": "all",
-      "url": "packages/qq-promotion-0.1.0.tgz",
-      "sha256": "dc3339a5e2bfb736c0071028d673d621d917346fb027405aeab9c2406d0c5c83",
-      "size": 69287,
-      "publishedAt": "2026-10-02T13:53:34.728Z"
     }
   ]
 }
