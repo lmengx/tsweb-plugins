@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-02T14:59:54.378Z",
+  "updated": "2026-10-02T19:28:13.663Z",
   "mirrors": [
     {
       "id": "github",
@@ -14,6 +14,25 @@
     }
   ],
   "packages": [
+    {
+      "name": "anti-cheat",
+      "version": "0.1.0",
+      "description": "反作弊（独立插件）：物品违禁（丢出/存箱包钩子 + 背包扫描 + 自动扫描）、弹幕违禁（NewProjectile 钩子 + 伤害上限与负伤害判定）、检测日志（CheatLog 表，跨服聚合查询与统计），外加旧版同族的杂项功能（没收违禁物品、按世界进度过滤、enable 开关、apply-defaults、/scan /projlist /scanlist 聊天命令）。宿主半负责清单编辑/校验/下发与跨服日志聚合，游戏服半 AntiCheat.dll 负责就地检测与阻断（命中即拦包，不做跨进程 REST 调用）",
+      "author": null,
+      "tags": [
+        "反作弊"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "deploy": "all",
+      "url": "packages/anti-cheat-0.1.0.tgz",
+      "sha256": "fdc204080820bef53c8a2c3e603ada503f7ab940edf3e39a819d58a3fa36ae89",
+      "size": 325503,
+      "publishedAt": "2026-10-02T19:28:13.596Z"
+    },
     {
       "name": "legacy-import",
       "version": "0.1.0",
@@ -124,6 +143,44 @@
       "sha256": "099c1784f1d733f8d7884af5de9459046535dee2b859c34a7cfd94b4e97c7f93",
       "size": 130097,
       "publishedAt": "2026-10-02T13:53:33.390Z"
+    },
+    {
+      "name": "status-panel",
+      "version": "0.1.0",
+      "description": "状态面板（独立插件）：在玩家屏幕上方显示服务器信息面板，内容由「面板 + 行」模板组成，行文本支持 26 个占位符插值（玩家属性、本服/全服在线、渔夫任务、BOSS 进度、生态群落等）与富文本（[c/HEX:] 颜色、[i:ID] 物品图标）。游戏服半 TsWebStatusPanel.dll 负责渲染并经 Terraria 9 号 StatusText 包下发，宿主半负责按服务器分片的配置存储、版本化下发与全服在线数计算；全服在线数取自 online-stats（ctx.onlineStats），不再重建旧版的自研 SSE + HMAC 通道",
+      "author": null,
+      "tags": [
+        "管理工具"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "deploy": "all",
+      "url": "packages/status-panel-0.1.0.tgz",
+      "sha256": "46b3e99d789a5e2eee5678986414a16e03cc1d4d1c9321ae44c13bada1cfe7d8",
+      "size": 152003,
+      "publishedAt": "2026-10-02T19:28:12.118Z"
+    },
+    {
+      "name": "task-scheduler",
+      "version": "0.1.0",
+      "description": "自动任务（独立插件）：按间隔或每天定时执行 TShock 命令，支持四种前提条件（无条件/在线人数/BOSS已击败/指定玩家在线）与顺序、并发两种执行方式，并保留完整执行记录。含游戏服半 TaskScheduler.dll（进程内 1 秒节拍调度 + 条件判定 + 命令执行 + 执行记录落库）。宿主半负责任务配置的存储、下发（失败重试/连接恢复补推/周期对账/自证）、界面与审计",
+      "author": null,
+      "tags": [
+        "管理工具"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "deploy": "all",
+      "url": "packages/task-scheduler-0.1.0.tgz",
+      "sha256": "ef46391bbd9195b9ad33f819f6768f700f3ec0a2b0bcfd400d624cb48db619b5",
+      "size": 165160,
+      "publishedAt": "2026-10-02T19:28:10.499Z"
     }
   ]
 }
