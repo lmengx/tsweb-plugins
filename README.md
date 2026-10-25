@@ -5,6 +5,18 @@
 - 插件源码在宿主仓库 `tsweb-cordis` 中开发与维护
 - 本仓库的用途是让面板/终端能下载并安装插件：`market-list` / `market-install` / `market-update`
 
+## 当前发行兼容性（2026-10-25）
+
+当前索引提供 27 个适配 Cordis/Vue 宿主的插件，包含市场自身；基础插件仍随 Windows / Windows-lite 发行。
+新包声明 `tsweb.accessApi=1`；带前端的包同时声明 `tsweb.clientApi=2`，使用编译后的 Vue 客户端。
+权限声明须与实际 `auth.access.policyApp` 路由实现一致，不能仅给旧包补字段。
+这些包面向已完成新架构升级的宿主，旧宿主应先升级。旧发行文件保留用于追溯，默认索引仅选择每个插件的最高版本。
+
+- 安装 `config-anything` 前，先安装并启用 `file-manager`；游戏服也需要对应的 `FileManager.dll`。
+- 游戏服插件的部署使用新版 TsWebHost 与已有 TShock REST；部署 token 需要 `tshock.rest.manage`，不需要 7979 端口。
+- 本次进行了隔离宿主安装、启停及浏览器初始化验证；未将其视为真实游戏服业务与长期运行验收。
+- 更新索引后，在面板插件市场点击“刷新索引”。下载仍会验证包的 SHA-256；不要覆盖同版本包来绕过更新流程。
+
 ## 目录结构
 
 ```
@@ -19,9 +31,9 @@ README.md
 
 ```
 <name>/
-├── package.json        { name, version, tsweb: { autoload, bundled, client, dll, deploy } }
+├── package.json        { name, version, tsweb: { accessApi: 1, clientApi: 2, autoload, bundled, client, dll } }
 ├── index.js            cordis 插件对象（export const name + export async function apply）
-├── client/             前端半（可选）
+├── dist/               编译后的 Vue 前端（可选）
 └── plugin/*.dll        C# 游戏服端 DLL（可选，安装后下发到 TShock 服务器热加载）
 ```
 
@@ -37,7 +49,6 @@ README.md
   "updated": "2026-09-26T14:19:41.259Z",
   "mirrors": [
     { "id": "github",  "base": "https://raw.githubusercontent.com/{repo}/{branch}" },
-    { "id": "gitee",   "base": "https://gitee.com/{repo}/raw/{branch}" },
     { "id": "ghproxy", "base": "https://gh-proxy.com/https://raw.githubusercontent.com/{repo}/{branch}" }
   ],
   "packages": [
@@ -46,7 +57,8 @@ README.md
       "version": "0.2.0",
       "description": "…",
       "author": null,             // 可选
-      "tags": ["数据统计", "排行榜"], // 分类标签：插件在 package.json 用 tsweb.tags 声明，发布时写入索引
+      "tags": ["数据统计"], // 分类标签：插件在 package.json 用 tsweb.tags 声明，发布时写入索引
+      "accessApi": 1,          // 当前权限契约
       "bundled": false,          // 是否属于"自带插件"（自带插件随宿主发行，一般不走本仓库）
       "hasClient": true,         // 是否含前端半
       "dll": ["./plugin/*.dll"], // C# 半声明（安装后用于下发到游戏服）
@@ -90,7 +102,6 @@ git push
 | id | 说明 |
 |----|------|
 | `github` | 原始仓库（raw.githubusercontent.com） |
-| `gitee` | Gitee 镜像仓库（如需启用，在 Gitee 侧建立同名仓库并同步） |
 | `ghproxy` | 公共前缀代理（gh-proxy.com） |
 
 `market.json` 内的哈希与版本不随镜像变化（内容相同哈希相同），因此切换镜像不会破坏校验。

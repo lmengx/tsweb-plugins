@@ -1,0 +1,179 @@
+{
+  "testedAt": "2026-10-25T09:34:27.462Z",
+  "result": "passed",
+  "indexSha256": "3761f0ee23f1b409d078e2da7939a673e89d32b50b846de5669c50fa6df07faa",
+  "marketPackages": [
+    {
+      "name": "account-attributes",
+      "version": "1.0.1",
+      "sha256": "738402aae3b53995b83f6a93fcbe705a68de115a0e8af5d90a43f1a5659e1c08"
+    },
+    {
+      "name": "anti-cheat",
+      "version": "2.1.5",
+      "sha256": "63b034d74db6b840a2490e70ecc07c3246323c99483075b3f5ab68365c858085"
+    },
+    {
+      "name": "apm",
+      "version": "1.2.2",
+      "sha256": "566e9180c4a23cde0edd97b0f91925dcdf6ccb7ea0b79dbc2d285eb859130112"
+    },
+    {
+      "name": "boss-limit",
+      "version": "1.0.2",
+      "sha256": "e6d67ba1cbed078ed07082152cf8aab773aa46faad78be784d06067e546e7e20"
+    },
+    {
+      "name": "config-anything",
+      "version": "1.5.0",
+      "sha256": "d936a37d078f0ac9eec814e0452fb3c3c9512b301768c835d5376022e7a472ad"
+    },
+    {
+      "name": "curfew",
+      "version": "1.0.0",
+      "sha256": "5e670274420195c587522882212110c7ec51f100946ccb42e7b1ca5b037e44f4"
+    },
+    {
+      "name": "dimensions",
+      "version": "1.0.0",
+      "sha256": "be9dcc08f710d04910ff78adbd6b8fdfc06033d283dfa7d5d16f889f89b02e12"
+    },
+    {
+      "name": "emote-command",
+      "version": "1.1.0",
+      "sha256": "bb6e28c808e93255950fe8da621194e3e0788b627c8b059727f5ac054988b49a"
+    },
+    {
+      "name": "file-manager",
+      "version": "1.4.1",
+      "sha256": "7f89f866ef00ca723b66fd9bf3d5b45cd4531f688688f562afa559bd7f9ca0de"
+    },
+    {
+      "name": "gameplay-settings",
+      "version": "1.3.0",
+      "sha256": "4a0cd51a50ae847b75b92dc4fb143a6ebc8ec5ed12bf6d3427d6adf0b5ef4254"
+    },
+    {
+      "name": "history",
+      "version": "2.4.1",
+      "sha256": "1a2832b6eee5166d34f5f047918a059d951530f5878b9666585b34a7521f1a77"
+    },
+    {
+      "name": "house",
+      "version": "1.2.1",
+      "sha256": "cd71d4f60716d0dbf1298e1be142c714138455beda27acaf2ab6f726f79cbdf4"
+    },
+    {
+      "name": "legacy-import",
+      "version": "2.0.0",
+      "sha256": "da0a7e96a966250b0e04b7163d4ebb36dc03a1f8f9fd162d732a7b1b0ae795e0"
+    },
+    {
+      "name": "market",
+      "version": "2.0.0",
+      "sha256": "fc74fbb8761964bd5233f923c27d89c71e8d4183a55cf459c488ddbafbe4fcf8"
+    },
+    {
+      "name": "online-stats",
+      "version": "0.2.1",
+      "sha256": "50f8febf8017ab8f0a03b2d096f6c152c757a2020bfb9b41d7ad1e13a8d21ebb"
+    },
+    {
+      "name": "patch1458",
+      "version": "1.0.1",
+      "sha256": "49ee66352a3cbc94a2df64c55846760b7cca6489264064cc2b49b981e88ecc91"
+    },
+    {
+      "name": "performance",
+      "version": "1.0.0",
+      "sha256": "39870a3fc85322facd0d13e3a9585d5f27bcad11cfd2f651df29c99a141cc93c"
+    },
+    {
+      "name": "personal-permissions",
+      "version": "1.0.1",
+      "sha256": "530f5501b0eb39f788297f6b30e83566cd2d0bc6f14db9fffa12cba105d60b28"
+    },
+    {
+      "name": "promotion",
+      "version": "2.0.0",
+      "sha256": "ad3f9b33dad360ffaccb359511c2fed7e7c650cc0b602e03fe76a6521570fc34"
+    },
+    {
+      "name": "qq-bind",
+      "version": "2.1.1",
+      "sha256": "df618ff3ad6700539872d55d8cb011773da52de9bbb531a431ee0818ae70fb6a"
+    },
+    {
+      "name": "registration",
+      "version": "2.0.3",
+      "sha256": "3bce896cd9776fac5d19346bbee648776a5422ab366098818efa90bf9fcf691a"
+    },
+    {
+      "name": "risk-control",
+      "version": "1.0.1",
+      "sha256": "bb491ce433fc85cf28988bf0ea093f3936365496a563268d0e66da87e436406e"
+    },
+    {
+      "name": "shopui",
+      "version": "1.0.0",
+      "sha256": "1741d510a48da0881d7c84e2f0a4715a183d8209178ffac447e44af6b471b22a"
+    },
+    {
+      "name": "status-panel",
+      "version": "2.0.2",
+      "sha256": "af0b2fa4019ad6c24f53e3d3839428d60af70f919f742ede259c1335ca637b57"
+    },
+    {
+      "name": "task-scheduler",
+      "version": "2.0.0",
+      "sha256": "86f662cab72ad65e46048e9c34b33dcef19f47cadf85468d8b1d873ee464bcdf"
+    },
+    {
+      "name": "vote",
+      "version": "2.0.0",
+      "sha256": "1f43960d54b4f68bdad92899c40834885a5fc4f1051f6be9e980fe093214ea08"
+    },
+    {
+      "name": "world-info",
+      "version": "1.1.0",
+      "sha256": "4f53e1c9b3fbb21c69f7c59186a03bf71bf50cd6391469ab5e097ff9139c796d"
+    }
+  ],
+  "backendsReady": 34,
+  "browserClientsLoaded": [
+    "account-attributes",
+    "anti-cheat",
+    "apm",
+    "base",
+    "boss-limit",
+    "config-anything",
+    "curfew",
+    "dimensions",
+    "emote-command",
+    "file-manager",
+    "gameplay-settings",
+    "history",
+    "house",
+    "legacy-import",
+    "market",
+    "performance",
+    "personal-permissions",
+    "promotion",
+    "qq-bind",
+    "registration",
+    "risk-control",
+    "shopui",
+    "status-panel",
+    "task-scheduler",
+    "vote",
+    "world-info"
+  ],
+  "checks": [
+    "package checksums and embedded compatibility",
+    "market list compatibility",
+    "actual market installer and guarded loader",
+    "disable and re-enable",
+    "actual Chrome frontend initialization"
+  ],
+  "realGameTested": false
+}
