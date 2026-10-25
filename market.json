@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-25T09:31:19.838Z",
+  "updated": "2026-10-25T13:03:37.978Z",
   "mirrors": [
     {
       "id": "github",
@@ -37,7 +37,7 @@
     },
     {
       "name": "anti-cheat",
-      "version": "2.1.5",
+      "version": "2.1.6",
       "description": "反作弊：物品与弹幕检测、物品收支日志、反恶性漏洞及防刷保护。文件管理由 file-manager 独立提供，其余旧 TSWeb 管理业务已移除。",
       "author": null,
       "tags": [
@@ -51,10 +51,10 @@
         "./plugin/*.dll"
       ],
       "deploy": "all",
-      "url": "packages/anti-cheat-2.1.5.tgz",
-      "sha256": "63b034d74db6b840a2490e70ecc07c3246323c99483075b3f5ab68365c858085",
-      "size": 181563,
-      "publishedAt": "2026-10-25T09:30:10.043Z"
+      "url": "packages/anti-cheat-2.1.6.tgz",
+      "sha256": "da445182d6f41cf3bc6083305770afb4784317903c89e680a7494d6e3283154f",
+      "size": 182563,
+      "publishedAt": "2026-10-25T13:03:37.343Z"
     },
     {
       "name": "apm",
@@ -285,7 +285,7 @@
     },
     {
       "name": "market",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底与离线本地目录模式）",
       "author": null,
       "tags": [
@@ -297,10 +297,10 @@
       "clientApi": 2,
       "dll": [],
       "deploy": "all",
-      "url": "packages/market-2.0.0.tgz",
-      "sha256": "fc74fbb8761964bd5233f923c27d89c71e8d4183a55cf459c488ddbafbe4fcf8",
+      "url": "packages/market-2.0.1.tgz",
+      "sha256": "a8f405f0336923e388553f5dac05f20d9c31ecb160a9629421e0f990b9ca9146",
       "size": 19284,
-      "publishedAt": "2026-10-25T09:30:33.745Z"
+      "publishedAt": "2026-10-25T13:03:37.503Z"
     },
     {
       "name": "online-stats",
@@ -429,7 +429,7 @@
     },
     {
       "name": "registration",
-      "version": "2.0.3",
+      "version": "2.0.4",
       "description": "注册登录控制：默认注册、自动注册与白名单准入，QQ 角色由 QQ 插件验证",
       "author": null,
       "tags": [
@@ -443,10 +443,10 @@
         "./plugin/*.dll"
       ],
       "deploy": "all",
-      "url": "packages/registration-2.0.3.tgz",
-      "sha256": "3bce896cd9776fac5d19346bbee648776a5422ab366098818efa90bf9fcf691a",
-      "size": 24209,
-      "publishedAt": "2026-10-25T09:30:59.158Z"
+      "url": "packages/registration-2.0.4.tgz",
+      "sha256": "7f11c3fcb407f2e0310630cc2d4f93e588d900714894c7e6f659f7748d4e3608",
+      "size": 24930,
+      "publishedAt": "2026-10-25T13:03:34.766Z"
     },
     {
       "name": "risk-control",
