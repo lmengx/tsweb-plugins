@@ -1,0 +1,180 @@
+{
+  "testedAt": "2026-10-25T15:46:30.636Z",
+  "result": "passed",
+  "indexSha256": "e3ca5b9c16f3d93a281fea4e263a2742c665737cb164e0619b5ca052d9ad5bf4",
+  "marketPackages": [
+    {
+      "name": "account-attributes",
+      "version": "1.0.2",
+      "sha256": "19e39c3c69b456f63ecad23c8c3e9219d787ae564289d91eb27887f1f4348f7d"
+    },
+    {
+      "name": "anti-cheat",
+      "version": "2.1.7",
+      "sha256": "3739b7bfbe1da40d0560907a7f3f20e93ff6827060b8815f20df009afb60f69b"
+    },
+    {
+      "name": "apm",
+      "version": "1.2.3",
+      "sha256": "735a70126b2d37414c01dca46c929fdfaa80769cd45f247ddd024920e4412284"
+    },
+    {
+      "name": "boss-limit",
+      "version": "1.0.3",
+      "sha256": "3248723f118f6d99650642c8cafd47935d3af900ab1364265c321ac3e3cd77fe"
+    },
+    {
+      "name": "config-anything",
+      "version": "1.5.1",
+      "sha256": "1fe16f3b8373ef275cfffab29ab40539192e425df99943fbd46636480a7e6544"
+    },
+    {
+      "name": "curfew",
+      "version": "1.0.1",
+      "sha256": "ef35c8fe7284603979791ddeef543aef194bc35412b2544dfe34cdd0f14e8f6d"
+    },
+    {
+      "name": "dimensions",
+      "version": "1.0.1",
+      "sha256": "54f60b8373508dd0b2ba7bc6d900527146b86b5a3878cdfc3736b0b9f5551047"
+    },
+    {
+      "name": "emote-command",
+      "version": "1.1.1",
+      "sha256": "c46237313a4073483dc6daa08ba6f1dcd5cee7a16a492a4351687b206223e155"
+    },
+    {
+      "name": "file-manager",
+      "version": "1.4.2",
+      "sha256": "09d6cfcf837b44caa5c96d8cdc801a08791609b273acf6c6723b31cbfd19c798"
+    },
+    {
+      "name": "gameplay-settings",
+      "version": "1.3.1",
+      "sha256": "f950fe744809cd589d44f618841f12ecb5d4f0b7ab44fe59de58c457e5165ecf"
+    },
+    {
+      "name": "history",
+      "version": "2.4.2",
+      "sha256": "65b0f4ecf3f61b221d7edcb8c7172637981367090f6fea87227f2c46c2943ed8"
+    },
+    {
+      "name": "house",
+      "version": "1.2.2",
+      "sha256": "9db7d717957b2dc931cc99a3204828f9b6da6111c80f5b28eb1ea437c8c24a87"
+    },
+    {
+      "name": "legacy-import",
+      "version": "2.0.1",
+      "sha256": "3816b552bb719ddb3988043201cefaadf6262d23e98fb6a413234c59715986ea"
+    },
+    {
+      "name": "market",
+      "version": "2.0.2",
+      "sha256": "ae02a00fb0c5b1c7d8a4036523dd547377b7d54b049fe7b5073ee5b4ceb53ce2"
+    },
+    {
+      "name": "online-stats",
+      "version": "0.2.2",
+      "sha256": "73e903f543757e1b3510ae687dfc7f39c4fab9a861f32ad77ad16cff4fa4f345"
+    },
+    {
+      "name": "patch1458",
+      "version": "1.0.2",
+      "sha256": "f412194799d40cb8deeaf44842260b2ae213322cb7eba46c51b36fbf29c79c82"
+    },
+    {
+      "name": "performance",
+      "version": "1.0.1",
+      "sha256": "0987e111a658d9ed733199dccfc43f1dcd510db1ebb63217b9ea15375bdc5308"
+    },
+    {
+      "name": "personal-permissions",
+      "version": "1.0.2",
+      "sha256": "8810ef7b0f427b4bddd82cd12aaf22d2e152d174b29995a4c82add426e598573"
+    },
+    {
+      "name": "promotion",
+      "version": "2.0.1",
+      "sha256": "f2d99a81a176a32185d1a9ae4133ad4b6e31933ff37b844c7bdf98d928aa4704"
+    },
+    {
+      "name": "qq-bind",
+      "version": "2.1.2",
+      "sha256": "7f734314f3e77a9450f697d6a2c88dd260c6b2c358248a6196278be31084f216"
+    },
+    {
+      "name": "registration",
+      "version": "2.0.5",
+      "sha256": "acc348664b56b6f66b9feaaa1190ec9e0469a5aa653345c8db29bbf8fec7519f"
+    },
+    {
+      "name": "risk-control",
+      "version": "1.0.2",
+      "sha256": "e63adef23b603956d69f70f9c5064a8aa70faaaa0a37711b12c82d2803d17660"
+    },
+    {
+      "name": "shopui",
+      "version": "1.0.1",
+      "sha256": "6fa17a5ffb42201f38ec7af9c75196e138a396989618c0fee524374f5898c23b"
+    },
+    {
+      "name": "status-panel",
+      "version": "2.0.3",
+      "sha256": "83277a62a62db9b5b04124b79ee15d1be65f4f2686e13a493774b1ad39d7b23f"
+    },
+    {
+      "name": "task-scheduler",
+      "version": "2.0.1",
+      "sha256": "b648823645d4b7f816dd65505d3d64345f14a38b81fb3b7ab6deec585785b484"
+    },
+    {
+      "name": "vote",
+      "version": "2.0.1",
+      "sha256": "f9b981aa75f5a105d97056932139e178d08be2f30826898164e3a297251d749b"
+    },
+    {
+      "name": "world-info",
+      "version": "1.1.1",
+      "sha256": "077df0d16c66ba4bca9798b0c2f2a4204a35fa3b6da5793525218053e62bc419"
+    }
+  ],
+  "backendsReady": 34,
+  "browserClientsLoaded": [
+    "account-attributes",
+    "anti-cheat",
+    "apm",
+    "base",
+    "boss-limit",
+    "config-anything",
+    "curfew",
+    "dimensions",
+    "emote-command",
+    "file-manager",
+    "gameplay-settings",
+    "history",
+    "house",
+    "legacy-import",
+    "market",
+    "performance",
+    "personal-permissions",
+    "promotion",
+    "qq-bind",
+    "registration",
+    "risk-control",
+    "shopui",
+    "status-panel",
+    "task-scheduler",
+    "vote",
+    "world-info"
+  ],
+  "checks": [
+    "package checksums and embedded compatibility",
+    "market list compatibility",
+    "actual market installer and guarded loader",
+    "disable and re-enable",
+    "actual Chrome frontend initialization"
+  ],
+  "realGameTested": false,
+  "releaseNotes": "Rebuilt market packages with incremented patch versions; retains immutable historical packages. Companion Windows release includes independent login and local initialization restart."
+}
