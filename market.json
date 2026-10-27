@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-25T15:45:02.614Z",
+  "updated": "2026-10-27T20:36:50.279Z",
   "mirrors": [
     {
       "id": "github",
@@ -119,7 +119,7 @@
     },
     {
       "name": "curfew",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "宵禁管理：长期循环与指定日期分区排期，按游戏服本地时间限制进服",
       "author": null,
       "tags": [
@@ -133,10 +133,10 @@
         "./plugin/TsWebCurfew.dll"
       ],
       "deploy": "all",
-      "url": "packages/curfew-1.0.1.tgz",
-      "sha256": "ef35c8fe7284603979791ddeef543aef194bc35412b2544dfe34cdd0f14e8f6d",
-      "size": 38497,
-      "publishedAt": "2026-10-25T15:44:54.501Z"
+      "url": "packages/curfew-1.0.2.tgz",
+      "sha256": "de4eb02390af454456b68734bef57123bedf8262855e2a65551a78ca8e7648f4",
+      "size": 38462,
+      "publishedAt": "2026-10-27T20:36:45.685Z"
     },
     {
       "name": "dimensions",
@@ -553,7 +553,7 @@
     },
     {
       "name": "world-info",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "世界信息：世界参数、Boss 与事件进度、NPC 解锁与定点生成器",
       "author": null,
       "tags": [
@@ -567,10 +567,10 @@
         "./plugin/WorldInfo.dll"
       ],
       "deploy": "all",
-      "url": "packages/world-info-1.1.1.tgz",
-      "sha256": "077df0d16c66ba4bca9798b0c2f2a4204a35fa3b6da5793525218053e62bc419",
-      "size": 347731,
-      "publishedAt": "2026-10-25T15:45:01.489Z"
+      "url": "packages/world-info-1.1.2.tgz",
+      "sha256": "a1d41653b6ac7ff3474c685f79996e7e0bfa3a57356e5e943d01c18d0dacc8ee",
+      "size": 347698,
+      "publishedAt": "2026-10-27T20:36:48.910Z"
     }
   ]
 }
