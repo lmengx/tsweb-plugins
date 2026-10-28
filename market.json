@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-28T15:36:54.874Z",
+  "updated": "2026-10-28T16:38:05.081Z",
   "mirrors": [
     {
       "id": "github",
@@ -74,6 +74,25 @@
       "sha256": "735a70126b2d37414c01dca46c929fdfaa80769cd45f247ddd024920e4412284",
       "size": 45253,
       "publishedAt": "2026-10-25T15:44:53.239Z"
+    },
+    {
+      "name": "base",
+      "version": "2.3.1",
+      "description": "基础功能：控制台（实时日志 + 命令下发）/ 玩家管理（属性查询 / JSON Patch 编辑 / 背包全量 / 管理操作）/ 组管理（组增删改查 + 权限增删）+ 玩家详情页扩展点（供其它插件挂载自定义区块）",
+      "author": null,
+      "tags": [],
+      "bundled": true,
+      "hasClient": true,
+      "accessApi": 1,
+      "clientApi": 2,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "deploy": "all",
+      "url": "packages/base-2.3.1.tgz",
+      "sha256": "bcbe9a68dde2cd1fc41975e94ec39d91b38b060f0a00106ccb7b8fa0aebca255",
+      "size": 10239237,
+      "publishedAt": "2026-10-28T16:38:04.104Z"
     },
     {
       "name": "boss-limit",
@@ -285,7 +304,7 @@
     },
     {
       "name": "market",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底与离线本地目录模式）",
       "author": null,
       "tags": [
@@ -297,10 +316,10 @@
       "clientApi": 2,
       "dll": [],
       "deploy": "all",
-      "url": "packages/market-2.0.2.tgz",
-      "sha256": "ae02a00fb0c5b1c7d8a4036523dd547377b7d54b049fe7b5073ee5b4ceb53ce2",
-      "size": 19283,
-      "publishedAt": "2026-10-25T15:44:56.571Z"
+      "url": "packages/market-2.0.3.tgz",
+      "sha256": "c515f2ad000adc92e790ca5cdb2a38c6716574ce4006c55458e9ae3c6f6ce924",
+      "size": 21765,
+      "publishedAt": "2026-10-28T16:37:57.194Z"
     },
     {
       "name": "online-stats",
