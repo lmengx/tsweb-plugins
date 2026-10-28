@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-27T21:10:09.452Z",
+  "updated": "2026-10-28T15:36:54.874Z",
   "mirrors": [
     {
       "id": "github",
@@ -37,7 +37,7 @@
     },
     {
       "name": "anti-cheat",
-      "version": "2.1.8",
+      "version": "2.1.9",
       "description": "反作弊：物品与弹幕检测、物品收支日志、反恶性漏洞及防刷保护。文件管理由 file-manager 独立提供，其余旧 TSWeb 管理业务已移除。",
       "author": null,
       "tags": [
@@ -51,10 +51,10 @@
         "./plugin/*.dll"
       ],
       "deploy": "all",
-      "url": "packages/anti-cheat-2.1.8.tgz",
-      "sha256": "5b76941fee882df122ff970fd7e627dbd09a910d50dfde54800e24b6c51e35d1",
-      "size": 183121,
-      "publishedAt": "2026-10-27T21:09:59.422Z"
+      "url": "packages/anti-cheat-2.1.9.tgz",
+      "sha256": "223ac7e346f15f2cba70bfd1a405a05fa569c4cc43af14d002e3e8135779922f",
+      "size": 186507,
+      "publishedAt": "2026-10-28T15:36:54.705Z"
     },
     {
       "name": "apm",
