@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-29T06:22:33.786Z",
+  "updated": "2026-10-29T06:54:56.588Z",
   "mirrors": [
     {
       "id": "github",
@@ -304,7 +304,7 @@
     },
     {
       "name": "market",
-      "version": "2.0.5",
+      "version": "2.0.6",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底与离线本地目录模式）",
       "author": null,
       "tags": [
@@ -316,10 +316,10 @@
       "clientApi": 2,
       "dll": [],
       "deploy": "all",
-      "url": "packages/market-2.0.5.tgz",
-      "sha256": "c0ffa5857570fbd33bb6b69bf286509fab3d82ee57e01c92b8f3143891b25a73",
-      "size": 22871,
-      "publishedAt": "2026-10-29T06:22:33.516Z"
+      "url": "packages/market-2.0.6.tgz",
+      "sha256": "91b8a1b50a4b53642637802353960fe824c53d78a1cb7d250518846312987fa2",
+      "size": 23351,
+      "publishedAt": "2026-10-29T06:54:56.356Z"
     },
     {
       "name": "online-stats",
