@@ -2,8 +2,12 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-29T06:54:56.588Z",
+  "updated": "2026-10-29T08:21:08.493Z",
   "mirrors": [
+    {
+      "id": "cloudflare",
+      "base": "https://cdn.plugin.tlry.me"
+    },
     {
       "id": "github",
       "base": "https://raw.githubusercontent.com/{repo}/{branch}"
@@ -29,6 +33,7 @@
       "dll": [
         "./plugin/AccountAttributes.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/account-attributes-1.0.2.tgz",
       "sha256": "19e39c3c69b456f63ecad23c8c3e9219d787ae564289d91eb27887f1f4348f7d",
@@ -50,6 +55,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/anti-cheat-2.1.9.tgz",
       "sha256": "223ac7e346f15f2cba70bfd1a405a05fa569c4cc43af14d002e3e8135779922f",
@@ -69,6 +75,7 @@
       "accessApi": 1,
       "clientApi": 2,
       "dll": [],
+      "requires": [],
       "deploy": "all",
       "url": "packages/apm-1.2.3.tgz",
       "sha256": "735a70126b2d37414c01dca46c929fdfaa80769cd45f247ddd024920e4412284",
@@ -77,7 +84,7 @@
     },
     {
       "name": "base",
-      "version": "2.3.1",
+      "version": "2.4.0",
       "description": "基础功能：控制台（实时日志 + 命令下发）/ 玩家管理（属性查询 / JSON Patch 编辑 / 背包全量 / 管理操作）/ 组管理（组增删改查 + 权限增删）+ 玩家详情页扩展点（供其它插件挂载自定义区块）",
       "author": null,
       "tags": [],
@@ -88,11 +95,12 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
-      "url": "packages/base-2.3.1.tgz",
-      "sha256": "bcbe9a68dde2cd1fc41975e94ec39d91b38b060f0a00106ccb7b8fa0aebca255",
-      "size": 10239237,
-      "publishedAt": "2026-10-28T16:38:04.104Z"
+      "url": "packages/base-2.4.0.tgz",
+      "sha256": "14ded257420dc30d47fc435f27efad8707536b15de696c2cb0958ffe87f3c924",
+      "size": 180485,
+      "publishedAt": "2026-10-29T07:50:25.800Z"
     },
     {
       "name": "boss-limit",
@@ -109,6 +117,7 @@
       "dll": [
         "./plugin/BossLimit.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/boss-limit-1.0.3.tgz",
       "sha256": "3248723f118f6d99650642c8cafd47935d3af900ab1364265c321ac3e3cd77fe",
@@ -130,6 +139,7 @@
       "dll": [
         "./plugin/ConfigAnything.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/config-anything-1.5.1.tgz",
       "sha256": "1fe16f3b8373ef275cfffab29ab40539192e425df99943fbd46636480a7e6544",
@@ -151,6 +161,7 @@
       "dll": [
         "./plugin/TsWebCurfew.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/curfew-1.0.2.tgz",
       "sha256": "de4eb02390af454456b68734bef57123bedf8262855e2a65551a78ca8e7648f4",
@@ -172,6 +183,7 @@
       "dll": [
         "./plugin/DimensionsBridge.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/dimensions-1.0.1.tgz",
       "sha256": "54f60b8373508dd0b2ba7bc6d900527146b86b5a3878cdfc3736b0b9f5551047",
@@ -193,6 +205,7 @@
       "dll": [
         "./plugin/TsWebEmoteCommand.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/emote-command-1.1.1.tgz",
       "sha256": "c46237313a4073483dc6daa08ba6f1dcd5cee7a16a492a4351687b206223e155",
@@ -214,6 +227,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/file-manager-1.4.2.tgz",
       "sha256": "09d6cfcf837b44caa5c96d8cdc801a08791609b273acf6c6723b31cbfd19c798",
@@ -235,6 +249,7 @@
       "dll": [
         "./plugin/GameplaySettings.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/gameplay-settings-1.3.1.tgz",
       "sha256": "f950fe744809cd589d44f618841f12ecb5d4f0b7ab44fe59de58c457e5165ecf",
@@ -243,7 +258,7 @@
     },
     {
       "name": "history",
-      "version": "2.5.0",
+      "version": "2.6.0",
       "description": "地图编辑历史、玩家活动区域与框选回退",
       "author": null,
       "tags": [
@@ -256,15 +271,18 @@
       "dll": [
         "./plugin/History.dll"
       ],
+      "requires": [
+        "world-preview"
+      ],
       "deploy": "all",
-      "url": "packages/history-2.5.0.tgz",
-      "sha256": "aee8f368de8216afc2e0f74626a09ba05e79b6385f29eafe6dc3c467cd6643f0",
-      "size": 762458,
-      "publishedAt": "2026-10-27T21:09:52.850Z"
+      "url": "packages/history-2.6.0.tgz",
+      "sha256": "dff85375ed35b26fc6913d27cbe252448a0ebdacf76aee59f33c0de59f718281",
+      "size": 762744,
+      "publishedAt": "2026-10-29T07:50:31.235Z"
     },
     {
       "name": "house",
-      "version": "1.2.2",
+      "version": "1.3.0",
       "description": "房屋保护、进入指令及建筑存档管理与图格预览",
       "author": null,
       "tags": [
@@ -277,11 +295,14 @@
       "dll": [
         "./plugin/House.dll"
       ],
+      "requires": [
+        "world-preview"
+      ],
       "deploy": "all",
-      "url": "packages/house-1.2.2.tgz",
-      "sha256": "9db7d717957b2dc931cc99a3204828f9b6da6111c80f5b28eb1ea437c8c24a87",
-      "size": 110902,
-      "publishedAt": "2026-10-25T15:44:56.372Z"
+      "url": "packages/house-1.3.0.tgz",
+      "sha256": "aef2789f59b5c52cf0120bb721d4878caa7c6776a29e7e18d1622d9f88d0ba13",
+      "size": 111089,
+      "publishedAt": "2026-10-29T07:50:35.490Z"
     },
     {
       "name": "legacy-import",
@@ -296,6 +317,7 @@
       "accessApi": 1,
       "clientApi": 2,
       "dll": [],
+      "requires": [],
       "deploy": "all",
       "url": "packages/legacy-import-2.0.2.tgz",
       "sha256": "a43f5ee37433f81453c4cf6c3e144551d2e058cd1abb22f8d565b204e7270fbf",
@@ -304,8 +326,8 @@
     },
     {
       "name": "market",
-      "version": "2.0.6",
-      "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底与离线本地目录模式）",
+      "version": "2.1.0",
+      "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底、离线本地目录模式与插件依赖先装）",
       "author": null,
       "tags": [
         "管理工具"
@@ -315,11 +337,12 @@
       "accessApi": 1,
       "clientApi": 2,
       "dll": [],
+      "requires": [],
       "deploy": "all",
-      "url": "packages/market-2.0.6.tgz",
-      "sha256": "91b8a1b50a4b53642637802353960fe824c53d78a1cb7d250518846312987fa2",
-      "size": 23351,
-      "publishedAt": "2026-10-29T06:54:56.356Z"
+      "url": "packages/market-2.1.0.tgz",
+      "sha256": "1b2f05ed7c5abba60d279b670cf646d9b345029196a15f57b7e8b081157eb5e9",
+      "size": 27054,
+      "publishedAt": "2026-10-29T07:50:35.787Z"
     },
     {
       "name": "online-stats",
@@ -335,6 +358,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/online-stats-0.2.2.tgz",
       "sha256": "73e903f543757e1b3510ae687dfc7f39c4fab9a861f32ad77ad16cff4fa4f345",
@@ -355,6 +379,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "ask",
       "url": "packages/patch1458-1.0.2.tgz",
       "sha256": "f412194799d40cb8deeaf44842260b2ae213322cb7eba46c51b36fbf29c79c82",
@@ -376,6 +401,7 @@
       "dll": [
         "./plugin/TsWebPerformance.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/performance-1.0.1.tgz",
       "sha256": "0987e111a658d9ed733199dccfc43f1dcd510db1ebb63217b9ea15375bdc5308",
@@ -397,6 +423,7 @@
       "dll": [
         "./plugin/PersonalPermissions.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/personal-permissions-1.0.2.tgz",
       "sha256": "8810ef7b0f427b4bddd82cd12aaf22d2e152d174b29995a4c82add426e598573",
@@ -418,6 +445,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/promotion-2.0.2.tgz",
       "sha256": "0a5747686e06de57fc10fd68b3954b89164581c1e121fbe246e3ba709f1f1ea1",
@@ -440,6 +468,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/qq-bind-2.2.0.tgz",
       "sha256": "29405938f8c8827af3d79acc92464d7bc708073c8c08c64fbeb42ed6cea2acd4",
@@ -461,6 +490,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/registration-2.0.6.tgz",
       "sha256": "094470828b217b0e84378b77ba7f21d44f945f56e6528c1868595cf5d8a9e2f8",
@@ -482,6 +512,7 @@
       "dll": [
         "./plugin/RiskControl.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/risk-control-1.0.2.tgz",
       "sha256": "e63adef23b603956d69f70f9c5064a8aa70faaaa0a37711b12c82d2803d17660",
@@ -503,6 +534,7 @@
       "dll": [
         "./plugin/TsWebShopUI.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/shopui-1.0.1.tgz",
       "sha256": "6fa17a5ffb42201f38ec7af9c75196e138a396989618c0fee524374f5898c23b",
@@ -524,6 +556,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/status-panel-2.0.3.tgz",
       "sha256": "83277a62a62db9b5b04124b79ee15d1be65f4f2686e13a493774b1ad39d7b23f",
@@ -545,6 +578,7 @@
       "dll": [
         "./plugin/*.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/task-scheduler-2.0.1.tgz",
       "sha256": "b648823645d4b7f816dd65505d3d64345f14a38b81fb3b7ab6deec585785b484",
@@ -564,6 +598,7 @@
       "accessApi": 1,
       "clientApi": 2,
       "dll": [],
+      "requires": [],
       "deploy": "all",
       "url": "packages/vote-2.0.1.tgz",
       "sha256": "f9b981aa75f5a105d97056932139e178d08be2f30826898164e3a297251d749b",
@@ -585,11 +620,33 @@
       "dll": [
         "./plugin/WorldInfo.dll"
       ],
+      "requires": [],
       "deploy": "all",
       "url": "packages/world-info-1.1.2.tgz",
       "sha256": "a1d41653b6ac7ff3474c685f79996e7e0bfa3a57356e5e943d01c18d0dacc8ee",
       "size": 347698,
       "publishedAt": "2026-10-27T20:36:48.910Z"
+    },
+    {
+      "name": "world-preview",
+      "version": "1.0.1",
+      "description": "世界预览：地图区块采集、流式贴图与建筑预览资源（原 Base 内置能力，独立插件；历史与房屋插件依赖它）",
+      "author": null,
+      "tags": [
+        "管理工具"
+      ],
+      "bundled": false,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/world-preview-1.0.1.tgz",
+      "sha256": "398e97a2d0b5a7457271f54a8dc648ed3859e6641731bf8975e300c2c872443a",
+      "size": 10067608,
+      "publishedAt": "2026-10-29T08:21:06.814Z"
     }
   ]
 }

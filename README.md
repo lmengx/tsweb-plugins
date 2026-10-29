@@ -62,6 +62,7 @@ README.md
       "bundled": false,          // 是否属于"自带插件"（自带插件随宿主发行，一般不走本仓库）
       "hasClient": true,         // 是否含前端半
       "dll": ["./plugin/*.dll"], // C# 半声明（安装后用于下发到游戏服）
+      "requires": ["world-preview"], // 插件依赖：安装/更新时缺依赖会先弹窗确认再下载（无依赖省略）
       "deploy": "all",           // DLL 下发模式（三态，缺省 all）：all=自动全量 / ask=安装时弹窗选 / manual=静默不下发
       "url": "packages/online-stats-0.2.0.tgz",
       "sha256": "…",             // 整包哈希，客户端下载后强制校验
@@ -73,6 +74,11 @@ README.md
 ```
 
 客户端（`market` 插件）按 `mirrors` 顺序逐个尝试下载，失败自动切换并记住成功来源；下载后校验 `sha256`，不符即拒绝安装。
+
+`requires` 是插件依赖：市场在安装/更新前解析依赖闭包，本机缺依赖时**不直接下载**，而是返回 409 让面板弹窗
+列出依赖包与大小；管理员确认后先装依赖（含自动启用已装但禁用的依赖），再装目标。
+目前 `history`、`house` 依赖 `world-preview`（世界预览，约 9.6 MB，含图格贴图），
+`world-preview` 自 base 2.4.0 起从 base 拆出，独立发布。
 
 ## 如何发布新版本
 
@@ -101,10 +107,12 @@ git push
 
 | id | 说明 |
 |----|------|
+| `cloudflare` | **默认第一**：自建 R2 直链 `https://cdn.plugin.tlry.me`（桶 `tlry-plugins`，键同本仓库目录） |
 | `github` | 原始仓库（raw.githubusercontent.com） |
 | `ghproxy` | 公共前缀代理（gh-proxy.com） |
 
 `market.json` 内的哈希与版本不随镜像变化（内容相同哈希相同），因此切换镜像不会破坏校验。
+发布后需把 `packages/*.tgz` 与重建的 `market.json` 上传到 R2（见 `tsweb-cordis/plugins/market/README.md`）。
 
 ## 安全
 
