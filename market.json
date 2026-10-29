@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-29T15:11:22.531Z",
+  "updated": "2026-10-29T15:20:10.931Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -306,8 +306,8 @@
     },
     {
       "name": "legacy-import",
-      "version": "2.0.3",
-      "description": "导入旧版数据容器：模块注册表（ctx.legacyImport.registerModule，供其它插件贡献自己的导入模块）+ 内置「旧版 QQ 台账」模块（qq-ledger：本件负责解析旧文件格式，落库交回 qq-bind 的台账契约，绝不绕过其原子落盘与快照下发）",
+      "version": "2.0.4",
+      "description": "导入旧版数据容器：模块注册表（ctx.legacyImport.registerModule，供其它插件贡献自己的导入模块）+ 内置「旧版 QQ 台账」模块（qq-ledger：本件负责解析旧文件格式，落库交回 QQ 服务（qq-serve）的台账契约，绝不绕过其原子落盘与快照下发）",
       "author": null,
       "tags": [
         "QQ管理"
@@ -319,10 +319,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/legacy-import-2.0.3.tgz",
-      "sha256": "bc83de20ac48cc870d729cbda0967e1a19faa0c007499a92124f9028bb19f64a",
-      "size": 21060,
-      "publishedAt": "2026-10-29T13:22:26.258Z"
+      "url": "packages/legacy-import-2.0.4.tgz",
+      "sha256": "e1207130d9ddd7bb3117fb2393f807eefd11476790da3f9d2d746e2eea11db64",
+      "size": 21074,
+      "publishedAt": "2026-10-29T15:20:10.536Z"
     },
     {
       "name": "market",
