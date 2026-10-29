@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-29T08:21:08.493Z",
+  "updated": "2026-10-29T13:22:28.765Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -306,7 +306,7 @@
     },
     {
       "name": "legacy-import",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "description": "导入旧版数据容器：模块注册表（ctx.legacyImport.registerModule，供其它插件贡献自己的导入模块）+ 内置「旧版 QQ 台账」模块（qq-ledger：本件负责解析旧文件格式，落库交回 qq-bind 的台账契约，绝不绕过其原子落盘与快照下发）",
       "author": null,
       "tags": [
@@ -319,10 +319,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/legacy-import-2.0.2.tgz",
-      "sha256": "a43f5ee37433f81453c4cf6c3e144551d2e058cd1abb22f8d565b204e7270fbf",
-      "size": 21020,
-      "publishedAt": "2026-10-27T21:10:04.951Z"
+      "url": "packages/legacy-import-2.0.3.tgz",
+      "sha256": "bc83de20ac48cc870d729cbda0967e1a19faa0c007499a92124f9028bb19f64a",
+      "size": 21060,
+      "publishedAt": "2026-10-29T13:22:26.258Z"
     },
     {
       "name": "market",
@@ -453,9 +453,30 @@
       "publishedAt": "2026-10-27T21:10:04.206Z"
     },
     {
-      "name": "qq-bind",
-      "version": "2.2.0",
-      "description": "QQ 绑定基础件：台账（唯一权威）+ 接入层（适配器/能力注册表）+ 游戏服半 QqBind.dll。Koishi 只是内置 legacy-http 适配器之一，核心不认识任何机器人框架",
+      "name": "qq-render",
+      "version": "1.1.0",
+      "description": "QQ 消息图片渲染：深空面板、像素营地、奶油便笺；默认像素营地，支持前端预览和切换。",
+      "author": null,
+      "tags": [
+        "QQ管理"
+      ],
+      "bundled": false,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [],
+      "requires": [
+        "qq-serve"
+      ],
+      "deploy": "all",
+      "url": "packages/qq-render-1.1.0.tgz",
+      "sha256": "7d2ec58beca81e0dab14e8adce320a14a710266a253683324638e07971e176f4",
+      "size": 9458,
+      "publishedAt": "2026-10-29T13:22:25.921Z"
+    },
+    {
+      "name": "qq-serve",
+      "version": "2.0.0",
+      "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
       "author": null,
       "tags": [
         "管理工具",
@@ -470,10 +491,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-bind-2.2.0.tgz",
-      "sha256": "29405938f8c8827af3d79acc92464d7bc708073c8c08c64fbeb42ed6cea2acd4",
-      "size": 146967,
-      "publishedAt": "2026-10-27T21:09:42.596Z"
+      "url": "packages/qq-serve-2.0.0.tgz",
+      "sha256": "5c2041652b581b5b49403f5d4d8576d2e53487ebaa8cce2d0cf251ba59ad6127",
+      "size": 280079,
+      "publishedAt": "2026-10-29T13:22:22.362Z"
     },
     {
       "name": "registration",
