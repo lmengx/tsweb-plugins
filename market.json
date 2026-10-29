@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-29T15:44:24.602Z",
+  "updated": "2026-10-29T15:52:39.440Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -42,7 +42,7 @@
     },
     {
       "name": "anti-cheat",
-      "version": "2.1.9",
+      "version": "2.1.10",
       "description": "反作弊：物品与弹幕检测、物品收支日志、反恶性漏洞及防刷保护。文件管理由 file-manager 独立提供，其余旧 TSWeb 管理业务已移除。",
       "author": null,
       "tags": [
@@ -57,10 +57,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/anti-cheat-2.1.9.tgz",
-      "sha256": "223ac7e346f15f2cba70bfd1a405a05fa569c4cc43af14d002e3e8135779922f",
-      "size": 186507,
-      "publishedAt": "2026-10-28T15:36:54.705Z"
+      "url": "packages/anti-cheat-2.1.10.tgz",
+      "sha256": "22ae2a7675990f882be8cd8401874240efaeb108d4f636e73dc79b9f52276291",
+      "size": 186496,
+      "publishedAt": "2026-10-29T15:52:30.487Z"
     },
     {
       "name": "apm",
@@ -84,7 +84,7 @@
     },
     {
       "name": "base",
-      "version": "2.4.0",
+      "version": "2.4.1",
       "description": "基础功能：控制台（实时日志 + 命令下发）/ 玩家管理（属性查询 / JSON Patch 编辑 / 背包全量 / 管理操作）/ 组管理（组增删改查 + 权限增删）+ 玩家详情页扩展点（供其它插件挂载自定义区块）",
       "author": null,
       "tags": [],
@@ -97,10 +97,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/base-2.4.0.tgz",
-      "sha256": "14ded257420dc30d47fc435f27efad8707536b15de696c2cb0958ffe87f3c924",
-      "size": 180485,
-      "publishedAt": "2026-10-29T07:50:25.800Z"
+      "url": "packages/base-2.4.1.tgz",
+      "sha256": "1195b01dc3dd382a6fef24aa8627d70e7d4c787c0bf7538ff6a67efe256334f9",
+      "size": 180543,
+      "publishedAt": "2026-10-29T15:52:37.366Z"
     },
     {
       "name": "boss-limit",
@@ -326,7 +326,7 @@
     },
     {
       "name": "market",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底、离线本地目录模式与插件依赖先装）",
       "author": null,
       "tags": [
@@ -339,10 +339,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/market-2.1.0.tgz",
-      "sha256": "1b2f05ed7c5abba60d279b670cf646d9b345029196a15f57b7e8b081157eb5e9",
-      "size": 27054,
-      "publishedAt": "2026-10-29T07:50:35.787Z"
+      "url": "packages/market-2.1.1.tgz",
+      "sha256": "4afd3c2e4dd7a4e46723e0fa30d634dcecda38f7ad5148fa211d46f74d2cd46d",
+      "size": 27096,
+      "publishedAt": "2026-10-29T15:52:37.963Z"
     },
     {
       "name": "online-stats",
@@ -608,7 +608,7 @@
     },
     {
       "name": "vote",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "description": "玩家投票：网页与 QQ 群参与、游玩时长加权、自主提案和轮次管理",
       "author": null,
       "tags": [
@@ -621,10 +621,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/vote-2.0.1.tgz",
-      "sha256": "f9b981aa75f5a105d97056932139e178d08be2f30826898164e3a297251d749b",
-      "size": 78463,
-      "publishedAt": "2026-10-25T15:45:00.870Z"
+      "url": "packages/vote-2.0.2.tgz",
+      "sha256": "77ea32e613c9e1efab1bbba731bf445a730d21de925ee26fc10b0c6957763eab",
+      "size": 78984,
+      "publishedAt": "2026-10-29T15:52:25.166Z"
     },
     {
       "name": "world-info",
