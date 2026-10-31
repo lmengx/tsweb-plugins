@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-31T14:12:37.602Z",
+  "updated": "2026-10-31T18:08:43.365Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -298,7 +298,7 @@
     },
     {
       "name": "init",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "description": "服务器接入与初始化引导：手动／本机／远程接入，SSC、注册登录、反作弊与玩家组权限设置",
       "author": null,
       "tags": [],
@@ -308,10 +308,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/init-0.2.0.tgz",
-      "sha256": "4b2ca3b13b1440df529d67aa2beb97f72c4915c9809c65f69cd5598491991fb8",
-      "size": 33935,
-      "publishedAt": "2026-10-31T14:12:21.580Z"
+      "url": "packages/init-0.2.1.tgz",
+      "sha256": "cd7f7610a488c34703788d9d737502a4c9da1760ad9caa35a9cee92cacd98a0a",
+      "size": 34247,
+      "publishedAt": "2026-10-31T18:08:42.807Z"
     },
     {
       "name": "legacy-import",
