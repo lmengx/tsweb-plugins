@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-31T20:36:37.085Z",
+  "updated": "2026-10-31T21:08:35.197Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -463,8 +463,8 @@
     },
     {
       "name": "qq-render",
-      "version": "1.1.0",
-      "description": "QQ 消息图片渲染：深空面板、像素营地、奶油便笺；默认像素营地，支持前端预览和切换。",
+      "version": "1.2.0",
+      "description": "QQ 消息图片渲染：16:9 主页封面、真实账户状态卡、服务器与玩家分页；深空、像素、奶油三套风格和前端预览。",
       "author": null,
       "tags": [
         "QQ管理"
@@ -477,14 +477,14 @@
         "qq-serve"
       ],
       "deploy": "all",
-      "url": "packages/qq-render-1.1.0.tgz",
-      "sha256": "7d2ec58beca81e0dab14e8adce320a14a710266a253683324638e07971e176f4",
-      "size": 9458,
-      "publishedAt": "2026-10-29T13:22:25.921Z"
+      "url": "packages/qq-render-1.2.0.tgz",
+      "sha256": "7caf3be9e1be22928d4bd71322209f5382e26d14c9c9a7c83ca1ffbaa52e8e47",
+      "size": 12083,
+      "publishedAt": "2026-10-31T21:08:33.982Z"
     },
     {
       "name": "qq-serve",
-      "version": "2.2.1",
+      "version": "2.3.0",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
       "author": null,
       "tags": [
@@ -500,10 +500,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.2.1.tgz",
-      "sha256": "dc6b29992669fd2a9aa35695a95962c9ce0a317dead232f842ee65aee500958d",
-      "size": 285149,
-      "publishedAt": "2026-10-31T20:36:36.147Z"
+      "url": "packages/qq-serve-2.3.0.tgz",
+      "sha256": "fbc2dc61a67f128a326bd1e4baccfb1054c05fbc9d1ced7c12a71f2a90864229",
+      "size": 287820,
+      "publishedAt": "2026-10-31T21:08:34.764Z"
     },
     {
       "name": "registration",
