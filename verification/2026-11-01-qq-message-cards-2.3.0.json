@@ -1,0 +1,121 @@
+{
+  "testedAt": "2026-10-31T21:10:42.563Z",
+  "sourceCommit": "128d8753b0760d76cf48e4720e4653984e7a11b4",
+  "localIndexPackages": 32,
+  "changedEntries": [
+    "qq-render",
+    "qq-serve"
+  ],
+  "packages": [
+    {
+      "name": "qq-render",
+      "version": "1.2.0",
+      "description": "QQ 消息图片渲染：16:9 主页封面、真实账户状态卡、服务器与玩家分页；深空、像素、奶油三套风格和前端预览。",
+      "author": null,
+      "tags": [
+        "QQ管理"
+      ],
+      "bundled": false,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [],
+      "requires": [
+        "qq-serve"
+      ],
+      "deploy": "all",
+      "url": "packages/qq-render-1.2.0.tgz",
+      "sha256": "7caf3be9e1be22928d4bd71322209f5382e26d14c9c9a7c83ca1ffbaa52e8e47",
+      "size": 12083,
+      "publishedAt": "2026-10-31T21:08:33.982Z",
+      "files": 7
+    },
+    {
+      "name": "qq-serve",
+      "version": "2.3.0",
+      "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
+      "author": null,
+      "tags": [
+        "管理工具",
+        "QQ管理"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "accessApi": 1,
+      "clientApi": 2,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/qq-serve-2.3.0.tgz",
+      "sha256": "fbc2dc61a67f128a326bd1e4baccfb1054c05fbc9d1ced7c12a71f2a90864229",
+      "size": 287820,
+      "publishedAt": "2026-10-31T21:08:34.764Z",
+      "files": 68
+    }
+  ],
+  "indexSha256": "a6b0365ccf6eaf5596516177809e162eacc9581e7492289114981c3e68dee4ab",
+  "livePlatform": "not tested",
+  "hostUpgrade": {
+    "checkedAt": "2026-10-31T21:16:03.0858841Z",
+    "qqServeBefore": "2.2.1",
+    "qqServeAfter": "2.3.0",
+    "qqServeEnabled": true,
+    "gameServerSync": "1/1",
+    "qqRenderBefore": "not installed",
+    "qqRenderAfter": "1.2.0",
+    "originalDownloadButton": "installed and enabled through market",
+    "imageRepliesEnabled": true,
+    "theme": "pixel",
+    "homePreview": {
+      "width": 960,
+      "loaded": true,
+      "height": 540
+    },
+    "accountPreview": {
+      "width": 960,
+      "loaded": true,
+      "data": "explicit demo only",
+      "height": 720
+    },
+    "officialConnected": true,
+    "responseMode": "markdown",
+    "keyboardMode": "custom",
+    "realQqMessagesSent": 0
+  },
+  "marketCommit": "f28dfbb5d563b4daccf6373356cd96aa1f485a48",
+  "gitPush": "verified remote main",
+  "cdn": {
+    "packages": [
+      {
+        "name": "qq-render",
+        "version": "1.2.0",
+        "size": 12083,
+        "sha256": "7caf3be9e1be22928d4bd71322209f5382e26d14c9c9a7c83ca1ffbaa52e8e47",
+        "cache": "DYNAMIC"
+      },
+      {
+        "name": "qq-serve",
+        "version": "2.3.0",
+        "size": 287820,
+        "sha256": "fbc2dc61a67f128a326bd1e4baccfb1054c05fbc9d1ced7c12a71f2a90864229",
+        "cache": "DYNAMIC"
+      }
+    ],
+    "indexByteIdentical": true,
+    "indexSha256": "a6b0365ccf6eaf5596516177809e162eacc9581e7492289114981c3e68dee4ab",
+    "cache": "DYNAMIC"
+  },
+  "regression": {
+    "qqSkipped": 1,
+    "svgTextOverlaps": 0,
+    "actualPngs": 69,
+    "architecture": "599 passed / 1 unrelated anti-cheat MapRevealGuard fixture compile failure",
+    "access": "passed",
+    "qqFailed": 0,
+    "browserChecks": 24,
+    "clientPassed": 309,
+    "svgTextOutside": 0,
+    "qqPassed": 397
+  }
+}
