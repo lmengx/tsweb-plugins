@@ -107,12 +107,15 @@ git push
 
 | id | 说明 |
 |----|------|
-| `cloudflare` | **默认第一**：自建 R2 直链 `https://cdn.plugin.tlry.me`（桶 `tlry-plugins`，键同本仓库目录） |
-| `github` | 原始仓库（raw.githubusercontent.com） |
-| `ghproxy` | 公共前缀代理（gh-proxy.com） |
+| `cloudflare` | **唯一来源**：自建 R2 直链 `https://cdn.plugin.tlry.me`（桶 `tlry-plugins`，键同本仓库目录） |
 
-`market.json` 内的哈希与版本不随镜像变化（内容相同哈希相同），因此切换镜像不会破坏校验。
+`github` 与 `ghproxy` 已于 2026-10-30 弃用：前者在国内解析到黑洞地址（TCP 不通），后者只是它的公共前缀代理（同一上游）。`market.json` 的 `mirrors[]` 现在只保留 `cloudflare`；市场插件侧同样只剩这一个候选，老配置里残留的 id 会被过滤掉，无需迁移。
+`market.json` 内的哈希与版本与镜像无关（内容相同哈希相同）。
 发布后需把 `packages/*.tgz` 与重建的 `market.json` 上传到 R2（见 `tsweb-cordis/plugins/market/README.md`）。
+
+## 宿主前端（`web` 包）
+
+索引里的 `web` 条目不是普通业务插件：它的 `public/` 就是整个面板前端，由打包器在发版时用 `buildHost` 现构建进包。面板不会用注册表「更新」它（`canUpdate('web')` 为 false），而是走市场页的**「更新前端」**——只替换静态资源、失败回滚，刷新页面即生效。详见 `tsweb-cordis/plugins/market/README.md` 的「宿主前端投放」一节。
 
 ## 安全
 
@@ -137,3 +140,11 @@ git push
 配套 Windows 基础发行包含独立正式登录界面和本机扫描初始化的一键保存重启按钮；这些宿主与 init 改动需使用新版基础发行，单独更新市场插件不能替代宿主升级。
 
 本轮通过实际市场安装器、34 个后端就绪、插件启停与 26 个前端加载验收。记录见 verification/2026-10-25-local-init-restart.json。
+
+## 2026-10-31 接收端热替换与连接收敛配套更新
+
+- `init` 0.2.0：一键接入改为“卸载运行中的旧版接收端并装载配套新版”；接入成功后返回 `replaced` / `retiredReceivers`，只有替换没完成（回执仍是旧 MVID）才提示重启一次。
+- `web` 2.0.4：添加服务器向导同步新文案（接收端不配套时说明“接入时卸旧装新”，成功后展示旧版 MVID 与替换说明）。
+- `market` 2.2.1 / `base` 2.4.2 以及前几轮已构建未推送的包（`market` 2.2.0、`web` 2.0.2/2.0.3、`market` 2.1.2~2.1.5、`init` 0.1.9）随本次索引一并推送。
+- 配套基础发行（接收端 2.3.5、`src/plugin-sync.js` 连接即收敛）必须使用新版 Windows 基础发行；单独更新市场插件不能替代宿主升级。
+- 验收：32 个市场包、36 个后端就绪、26 个浏览器前端加载与逐插件停用/启用全部通过；报告见 `verification/2026-10-31.json`。未接入真实游戏服。

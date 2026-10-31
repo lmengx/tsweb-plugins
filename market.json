@@ -2,19 +2,11 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-29T15:52:39.440Z",
+  "updated": "2026-10-31T14:12:37.602Z",
   "mirrors": [
     {
       "id": "cloudflare",
       "base": "https://cdn.plugin.tlry.me"
-    },
-    {
-      "id": "github",
-      "base": "https://raw.githubusercontent.com/{repo}/{branch}"
-    },
-    {
-      "id": "ghproxy",
-      "base": "https://gh-proxy.com/https://raw.githubusercontent.com/{repo}/{branch}"
     }
   ],
   "packages": [
@@ -84,7 +76,7 @@
     },
     {
       "name": "base",
-      "version": "2.4.1",
+      "version": "2.4.2",
       "description": "基础功能：控制台（实时日志 + 命令下发）/ 玩家管理（属性查询 / JSON Patch 编辑 / 背包全量 / 管理操作）/ 组管理（组增删改查 + 权限增删）+ 玩家详情页扩展点（供其它插件挂载自定义区块）",
       "author": null,
       "tags": [],
@@ -97,10 +89,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/base-2.4.1.tgz",
-      "sha256": "1195b01dc3dd382a6fef24aa8627d70e7d4c787c0bf7538ff6a67efe256334f9",
+      "url": "packages/base-2.4.2.tgz",
+      "sha256": "de50478d1c71daf4919473188be82cccdf57998d483d067fa7705841980e166d",
       "size": 180543,
-      "publishedAt": "2026-10-29T15:52:37.366Z"
+      "publishedAt": "2026-10-29T16:34:38.142Z"
     },
     {
       "name": "boss-limit",
@@ -305,6 +297,23 @@
       "publishedAt": "2026-10-29T07:50:35.490Z"
     },
     {
+      "name": "init",
+      "version": "0.2.0",
+      "description": "服务器接入与初始化引导：手动／本机／远程接入，SSC、注册登录、反作弊与玩家组权限设置",
+      "author": null,
+      "tags": [],
+      "bundled": true,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/init-0.2.0.tgz",
+      "sha256": "4b2ca3b13b1440df529d67aa2beb97f72c4915c9809c65f69cd5598491991fb8",
+      "size": 33935,
+      "publishedAt": "2026-10-31T14:12:21.580Z"
+    },
+    {
       "name": "legacy-import",
       "version": "2.0.4",
       "description": "导入旧版数据容器：模块注册表（ctx.legacyImport.registerModule，供其它插件贡献自己的导入模块）+ 内置「旧版 QQ 台账」模块（qq-ledger：本件负责解析旧文件格式，落库交回 QQ 服务（qq-serve）的台账契约，绝不绕过其原子落盘与快照下发）",
@@ -326,7 +335,7 @@
     },
     {
       "name": "market",
-      "version": "2.1.1",
+      "version": "2.2.1",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底、离线本地目录模式与插件依赖先装）",
       "author": null,
       "tags": [
@@ -339,10 +348,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/market-2.1.1.tgz",
-      "sha256": "4afd3c2e4dd7a4e46723e0fa30d634dcecda38f7ad5148fa211d46f74d2cd46d",
-      "size": 27096,
-      "publishedAt": "2026-10-29T15:52:37.963Z"
+      "url": "packages/market-2.2.1.tgz",
+      "sha256": "b616cb8bb5f1db3cf8bd0892830328da96c1dfb97683b1c7c9c63459b5fed378",
+      "size": 44033,
+      "publishedAt": "2026-10-31T07:12:32.531Z"
     },
     {
       "name": "online-stats",
@@ -625,6 +634,23 @@
       "sha256": "77ea32e613c9e1efab1bbba731bf445a730d21de925ee26fc10b0c6957763eab",
       "size": 78984,
       "publishedAt": "2026-10-29T15:52:25.166Z"
+    },
+    {
+      "name": "web",
+      "version": "2.0.4",
+      "description": "TSWeb Vue 3 插件界面宿主",
+      "author": null,
+      "tags": [],
+      "bundled": true,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/web-2.0.4.tgz",
+      "sha256": "bfbbc4fad1722449416bca51e16d915d6d54ac25eb403be2fbdc06c03efcebfe",
+      "size": 273336,
+      "publishedAt": "2026-10-31T14:12:32.650Z"
     },
     {
       "name": "world-info",
