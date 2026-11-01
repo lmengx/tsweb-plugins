@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-10-31T21:08:35.197Z",
+  "updated": "2026-11-01T12:10:51.296Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -484,7 +484,7 @@
     },
     {
       "name": "qq-serve",
-      "version": "2.3.0",
+      "version": "2.3.1",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
       "author": null,
       "tags": [
@@ -500,10 +500,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.3.0.tgz",
-      "sha256": "fbc2dc61a67f128a326bd1e4baccfb1054c05fbc9d1ced7c12a71f2a90864229",
-      "size": 287820,
-      "publishedAt": "2026-10-31T21:08:34.764Z"
+      "url": "packages/qq-serve-2.3.1.tgz",
+      "sha256": "e22bd72515485161f4906d6f8cd8bf11d9dc6e917b47622707d74e7d6b4e1faa",
+      "size": 287878,
+      "publishedAt": "2026-11-01T12:10:49.488Z"
     },
     {
       "name": "registration",
