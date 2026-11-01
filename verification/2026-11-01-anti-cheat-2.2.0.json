@@ -1,0 +1,69 @@
+{
+  "verifiedAt": "2026-11-01T15:47:21.549Z",
+  "version": "2.2.0",
+  "sourceCommit": "19e22dc4bc282c9842416355ea552ca656c37f3a",
+  "marketReleaseCommit": "95c52bcc38defc8ce1fba1e7bbde94665105aa0b",
+  "review": {
+    "fixed": "Snapshot detection world ID before asynchronous audit writes; preserve existing synchronous callers",
+    "regression": "Added delayed audit world-switch and SQLite persistence checks; updated particle lifecycle fixture",
+    "remaining": "Behavioral inference logs only; no live-client validation"
+  },
+  "validation": {
+    "backend": {
+      "pass": 59,
+      "fail": 0
+    },
+    "ui": {
+      "pass": 14,
+      "fail": 0
+    },
+    "dllIsolation": {
+      "pass": 5,
+      "fail": 0
+    },
+    "accessContracts": "passed",
+    "csharp": "build passed; 22 existing warnings",
+    "vue": "production build passed",
+    "installer": {
+      "testedAt": "2026-11-01T15:44:55.422Z",
+      "compatible": "C:\\Users\\lyt\\Documents\\GitHub\\TsWeb\\worktrees\\cordis-vue\\tmp\\anti-cheat-release-20261101\\market\\packages\\anti-cheat-2.2.0.tgz",
+      "legacy": "C:\\Users\\lyt\\Documents\\GitHub\\TsWeb\\tsweb-plugins\\packages\\anti-cheat-0.1.0.tgz",
+      "result": "passed",
+      "checks": [
+        "legacy rejection and cleanup",
+        "replacement enables compatible backend",
+        "guarded loader",
+        "real JWT and HTTP routes",
+        "disable and re-enable"
+      ],
+      "gameSide": "not tested; no live game connected"
+    },
+    "archive": {
+      "verifiedAt": "2026-11-01T15:46:16.651Z",
+      "version": "2.2.0",
+      "sha256": "ca68899efefca65c021ff78c7a9fdf1e784d2f3a3161c2c013c9ea4d84eda55e",
+      "size": 197382,
+      "archiveContents": "18 files; source/tests/runtime state excluded; DLL and Vue output byte matched",
+      "cdnPackage": "downloaded and hash verified",
+      "preservedPublicEntries": 31
+    }
+  },
+  "publicChecks": [
+    {
+      "indexStatus": 200,
+      "packageStatus": 200,
+      "version": "2.2.0",
+      "sha256": "ca68899efefca65c021ff78c7a9fdf1e784d2f3a3161c2c013c9ea4d84eda55e",
+      "size": 197382
+    },
+    {
+      "indexStatus": 200,
+      "packageStatus": 200,
+      "version": "2.2.0",
+      "sha256": "ca68899efefca65c021ff78c7a9fdf1e784d2f3a3161c2c013c9ea4d84eda55e",
+      "size": 197382
+    }
+  ],
+  "indexIsolation": "Public index preserves all 31 non-anti-cheat entries, including five versions already on CDN but pending in the shared market worktree; Git release changes only anti-cheat. Existing unrelated working changes preserved.",
+  "deployment": "Published package and index only; no running game/panel upgraded or restarted."
+}
