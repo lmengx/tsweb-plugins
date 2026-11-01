@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-01T12:17:24.547Z",
+  "sourceCommit": "dc78083d91b03b42ad2e85900c8e9a4d4b324656",
+  "marketCommit": "edb96effd28703077c38518f00fc7546a11113a8",
+  "package": {
+    "name": "qq-serve",
+    "version": "2.3.1",
+    "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
+    "author": null,
+    "tags": [
+      "管理工具",
+      "QQ管理"
+    ],
+    "bundled": false,
+    "hasClient": true,
+    "accessApi": 1,
+    "clientApi": 2,
+    "dll": [
+      "./plugin/*.dll"
+    ],
+    "requires": [],
+    "deploy": "all",
+    "url": "packages/qq-serve-2.3.1.tgz",
+    "sha256": "e22bd72515485161f4906d6f8cd8bf11d9dc6e917b47622707d74e7d6b4e1faa",
+    "size": 287878,
+    "publishedAt": "2026-11-01T12:10:49.488Z"
+  },
+  "changedEntries": [
+    "qq-serve"
+  ],
+  "allPackagesVerified": 32,
+  "indexSha256": "6f9079a704626ee367ef126c88fb149ff93e6fe5601389695d6ce191ddd6979a",
+  "review": {
+    "rootCause": "2.3.0 home menu visual enrichment sent media and native navigation as two separate messages",
+    "fix": "Menu uses one native text/Markdown card with buttons and no decorative media. Meaningful account/server/player images remain.",
+    "hybridIntegration": "official and hybrid modes; group and private chats; image renderer enabled; one official reply, no OneBot reply, no image rendering/upload, redelivery suppressed"
+  },
+  "regression": {
+    "qqTests": 403,
+    "qqPassed": 402,
+    "qqSkipped": 1,
+    "qqFailed": 0,
+    "clientPassed": 309,
+    "clientFailed": 0,
+    "access": "passed",
+    "architecture": "not rerun; unrelated anti-cheat fixture failure was recorded for 2.3.0"
+  },
+  "cdn": {
+    "packageHashMatches": true,
+    "packageSizeMatches": true,
+    "indexByteIdentical": true
+  },
+  "gitPush": "remote main verified",
+  "hostUpgrade": {
+    "from": "2.3.0",
+    "to": "2.3.1",
+    "enabled": true,
+    "gameServer": "loaded",
+    "mode": "hybrid",
+    "officialConnected": true,
+    "onebotConnected": true,
+    "responseMode": "markdown",
+    "keyboardMode": "custom",
+    "rendererVersion": "1.2.0",
+    "imageRepliesEnabled": true,
+    "previewKinds": [
+      "account",
+      "servers",
+      "players"
+    ],
+    "defaultPreview": "account",
+    "credentialsOrLedgerChanged": false,
+    "upgradeRequests": 1,
+    "transientMarketReadError": "502; subsequent index and installed reads succeeded",
+    "realQqMessagesSent": 0,
+    "liveQqClientMenu": "not sent; one-message behavior verified in isolated regression"
+  },
+  "publishingAuthentication": "existing Wrangler OAuth session; no credential read or logged"
+}
