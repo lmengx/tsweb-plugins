@@ -1,0 +1,54 @@
+{
+  "testedAt": "2026-11-02T06:45:53.905Z",
+  "result": "passed",
+  "version": "1.0.2",
+  "packageUrl": "https://cdn.plugin.tlry.me/packages/dimensions-1.0.2.tgz",
+  "packageSha256": "8356f54695b7b30b533d7f901f03436ede83dec6575d40249fedad7ac0f9f274",
+  "packageSize": 218217,
+  "indexSha256": "9de7c5848c0043c852b71a8453eb93f2de4822dd34955e87bf841d3d1f24ab0f",
+  "marketPackages": 32,
+  "otherEntriesUnchanged": 31,
+  "tests": {
+    "passed": 113,
+    "failed": 0,
+    "skipped": 0
+  },
+  "accessCheck": "passed",
+  "installerUpgrade": "1.0.1 -> 1.0.2: passed",
+  "sourceCommitted": false,
+  "releaseNotes": [
+    "逐步修复已删除管理服务器的残留维度配置",
+    "失效绑定提示、批量清理、断连确认与草稿保护",
+    "声明 Cordis plugins 依赖，修复 DLL 下发误报"
+  ],
+  "review": {
+    "result": "passed",
+    "blockingFindings": 0
+  },
+  "isolated": {
+    "testedAt": "2026-11-02T06:44:15.587Z",
+    "result": "passed",
+    "version": "1.0.2",
+    "packageSha256": "8356f54695b7b30b533d7f901f03436ede83dec6575d40249fedad7ac0f9f274",
+    "packageFiles": 24,
+    "checks": [
+      "runtime-only archive",
+      "real registry installer: 1.0.1 -> 1.0.2",
+      "reproduced old missing-inject failure",
+      "new deploy/status calls succeed",
+      "cancel job",
+      "disable and re-enable",
+      "saved config preserved"
+    ],
+    "realGameTested": false
+  },
+  "local": {
+    "panelVersion": "1.0.2",
+    "savedConfigUnchanged": true,
+    "gameServerState": "REST currently offline; DLL had synced before game process exited",
+    "gameServerRestartedByAgent": false,
+    "browserVerified": "market detail shows 1.0.2 installed",
+    "panelStartedWith": "existing start-test.ps1 after port 3000 stopped listening"
+  },
+  "scope": "dimensions only; other pending releases excluded"
+}

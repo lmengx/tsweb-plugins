@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-01T15:44:43.829Z",
+  "updated": "2026-11-02T06:44:40.208Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -162,7 +162,7 @@
     },
     {
       "name": "dimensions",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "维度多服中转：独立代理进程、游戏内切服、备用大厅与子服可信连接",
       "author": null,
       "tags": [
@@ -177,10 +177,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/dimensions-1.0.1.tgz",
-      "sha256": "54f60b8373508dd0b2ba7bc6d900527146b86b5a3878cdfc3736b0b9f5551047",
-      "size": 214750,
-      "publishedAt": "2026-10-25T15:44:54.941Z"
+      "url": "packages/dimensions-1.0.2.tgz",
+      "sha256": "8356f54695b7b30b533d7f901f03436ede83dec6575d40249fedad7ac0f9f274",
+      "size": 218217,
+      "publishedAt": "2026-11-02T06:41:36.935Z"
     },
     {
       "name": "emote-command",
