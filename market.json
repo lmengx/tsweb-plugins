@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-02T06:44:40.208Z",
+  "updated": "2026-11-03T04:59:27.199Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -34,7 +34,7 @@
     },
     {
       "name": "anti-cheat",
-      "version": "2.2.0",
+      "version": "2.2.1",
       "description": "反作弊：物品与弹幕检测、物品收支日志、反恶性漏洞及防刷保护。文件管理由 file-manager 独立提供，其余旧 TSWeb 管理业务已移除。",
       "author": null,
       "tags": [
@@ -49,10 +49,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/anti-cheat-2.2.0.tgz",
-      "sha256": "ca68899efefca65c021ff78c7a9fdf1e784d2f3a3161c2c013c9ea4d84eda55e",
-      "size": 197382,
-      "publishedAt": "2026-11-01T15:44:43.128Z"
+      "url": "packages/anti-cheat-2.2.1.tgz",
+      "sha256": "c91b7a8ba59ebdf49fdef908d95b52e50fb45b6d27fee1a730eb53b17952529d",
+      "size": 196971,
+      "publishedAt": "2026-11-03T04:57:08.495Z"
     },
     {
       "name": "apm",
@@ -96,7 +96,7 @@
     },
     {
       "name": "boss-limit",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "Boss 召唤策略、时间解锁、死亡幽灵与晚入血量补偿。",
       "author": null,
       "tags": [
@@ -111,10 +111,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/boss-limit-1.0.3.tgz",
-      "sha256": "3248723f118f6d99650642c8cafd47935d3af900ab1364265c321ac3e3cd77fe",
-      "size": 59187,
-      "publishedAt": "2026-10-25T15:44:53.621Z"
+      "url": "packages/boss-limit-1.0.4.tgz",
+      "sha256": "8bd62a2b16fa2fb56be497db7ce9b09ed0d06d4dbe37e960e723f4bac4922741",
+      "size": 58926,
+      "publishedAt": "2026-11-03T04:57:10.191Z"
     },
     {
       "name": "config-anything",
@@ -140,7 +140,7 @@
     },
     {
       "name": "curfew",
-      "version": "1.0.2",
+      "version": "1.0.4",
       "description": "宵禁管理：长期循环与指定日期分区排期，按游戏服本地时间限制进服",
       "author": null,
       "tags": [
@@ -155,14 +155,14 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/curfew-1.0.2.tgz",
-      "sha256": "de4eb02390af454456b68734bef57123bedf8262855e2a65551a78ca8e7648f4",
-      "size": 38462,
-      "publishedAt": "2026-10-27T20:36:45.685Z"
+      "url": "packages/curfew-1.0.4.tgz",
+      "sha256": "dc659836cadc0c5ba0dfe415e0132749057cd07d57ca7302f5527916ca6d1ea0",
+      "size": 38238,
+      "publishedAt": "2026-11-03T04:57:11.872Z"
     },
     {
       "name": "dimensions",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "维度多服中转：独立代理进程、游戏内切服、备用大厅与子服可信连接",
       "author": null,
       "tags": [
@@ -177,14 +177,14 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/dimensions-1.0.2.tgz",
-      "sha256": "8356f54695b7b30b533d7f901f03436ede83dec6575d40249fedad7ac0f9f274",
-      "size": 218217,
-      "publishedAt": "2026-11-02T06:41:36.935Z"
+      "url": "packages/dimensions-1.0.3.tgz",
+      "sha256": "e5351d6dc8305b37e959990e0d5ed5dea72a6514c2c2e1bdce494ebeace8f344",
+      "size": 218150,
+      "publishedAt": "2026-11-03T04:57:14.192Z"
     },
     {
       "name": "emote-command",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "表情指令：将游戏表情绑定为按顺序执行的玩家指令，支持独立规则、冷却和权限设置",
       "author": null,
       "tags": [
@@ -199,10 +199,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/emote-command-1.1.1.tgz",
-      "sha256": "c46237313a4073483dc6daa08ba6f1dcd5cee7a16a492a4351687b206223e155",
-      "size": 89926,
-      "publishedAt": "2026-10-25T15:44:55.201Z"
+      "url": "packages/emote-command-1.1.2.tgz",
+      "sha256": "e6cac23a5adbd4b4ca8292f87420d500622709f860f792a4341be85286a31545",
+      "size": 89347,
+      "publishedAt": "2026-11-03T04:57:15.966Z"
     },
     {
       "name": "file-manager",
@@ -228,7 +228,7 @@
     },
     {
       "name": "gameplay-settings",
-      "version": "1.3.1",
+      "version": "1.3.3",
       "description": "玩法设置：中核、原版硬核、强制 PvP 和持久化随机分队。",
       "author": null,
       "tags": [
@@ -243,10 +243,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/gameplay-settings-1.3.1.tgz",
-      "sha256": "f950fe744809cd589d44f618841f12ecb5d4f0b7ab44fe59de58c457e5165ecf",
-      "size": 56641,
-      "publishedAt": "2026-10-25T15:44:55.853Z"
+      "url": "packages/gameplay-settings-1.3.3.tgz",
+      "sha256": "09c27dc9fd4e2bbc0b4099f820ed324969a7cdf8ae151ccf61e1fdbda02a1d19",
+      "size": 56625,
+      "publishedAt": "2026-11-03T04:57:17.746Z"
     },
     {
       "name": "history",
@@ -441,7 +441,7 @@
     },
     {
       "name": "promotion",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "description": "权限提升（独立插件）：一块配置同时管两种依据——QQ 绑定提升（玩家登录时识别 qq-bind 落盘的绑定快照）与游玩时长提升（每分钟检查 player_daily_stat 的累计时长），共享忽略组保护名单。宿主半负责配置存储与下发，游戏服半 Promotion.dll 执行改组；不累加游玩时长（那是 online-stats 的职责）",
       "author": null,
       "tags": [
@@ -456,10 +456,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/promotion-2.0.2.tgz",
-      "sha256": "0a5747686e06de57fc10fd68b3954b89164581c1e121fbe246e3ba709f1f1ea1",
-      "size": 55621,
-      "publishedAt": "2026-10-27T21:10:04.206Z"
+      "url": "packages/promotion-2.0.3.tgz",
+      "sha256": "ed364e4c399df7bb19122bea45c2d40c99574ceeb38c2b8858b7a92f6041bb6f",
+      "size": 50217,
+      "publishedAt": "2026-11-03T04:57:19.467Z"
     },
     {
       "name": "qq-render",
@@ -484,7 +484,7 @@
     },
     {
       "name": "qq-serve",
-      "version": "2.3.1",
+      "version": "2.3.2",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
       "author": null,
       "tags": [
@@ -500,14 +500,14 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.3.1.tgz",
-      "sha256": "e22bd72515485161f4906d6f8cd8bf11d9dc6e917b47622707d74e7d6b4e1faa",
-      "size": 287878,
-      "publishedAt": "2026-11-01T12:10:49.488Z"
+      "url": "packages/qq-serve-2.3.2.tgz",
+      "sha256": "42df1f91164843606d45450e6401b0053ca2ecf927cb56bd240c8ac58bdde3f2",
+      "size": 287571,
+      "publishedAt": "2026-11-03T04:57:22.198Z"
     },
     {
       "name": "registration",
-      "version": "2.0.6",
+      "version": "2.0.7",
       "description": "注册登录控制：默认注册、自动注册与白名单准入，QQ 角色由 QQ 插件验证",
       "author": null,
       "tags": [
@@ -522,14 +522,14 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/registration-2.0.6.tgz",
-      "sha256": "094470828b217b0e84378b77ba7f21d44f945f56e6528c1868595cf5d8a9e2f8",
-      "size": 25147,
-      "publishedAt": "2026-10-27T21:10:07.610Z"
+      "url": "packages/registration-2.0.7.tgz",
+      "sha256": "80b5f2576fe8b316b3e8a90a604c9bc9d4b506b3b140a78b5931cb7d6fa6ca36",
+      "size": 24765,
+      "publishedAt": "2026-11-03T04:57:23.760Z"
     },
     {
       "name": "risk-control",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "实时风控：沿用旧版群体选择、禁入、禁言与踢出操作",
       "author": null,
       "tags": [
@@ -544,14 +544,14 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/risk-control-1.0.2.tgz",
-      "sha256": "e63adef23b603956d69f70f9c5064a8aa70faaaa0a37711b12c82d2803d17660",
-      "size": 42492,
-      "publishedAt": "2026-10-25T15:44:59.080Z"
+      "url": "packages/risk-control-1.0.3.tgz",
+      "sha256": "2ca7dfa48fdb022213164d5fd6323e63c91e385cc35ed59cabea5708133a038e",
+      "size": 42114,
+      "publishedAt": "2026-11-03T04:57:25.409Z"
     },
     {
       "name": "shopui",
-      "version": "1.0.1",
+      "version": "1.0.3",
       "description": "虚拟商店：独立旅商、四十格商品布局、分类控件、价格与进度条件编辑",
       "author": null,
       "tags": [
@@ -566,14 +566,14 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/shopui-1.0.1.tgz",
-      "sha256": "6fa17a5ffb42201f38ec7af9c75196e138a396989618c0fee524374f5898c23b",
-      "size": 51045,
-      "publishedAt": "2026-10-25T15:44:59.491Z"
+      "url": "packages/shopui-1.0.3.tgz",
+      "sha256": "dcaf9b9561a4c7d9b947271336b6c7993a1f1a5396f5df4fa006f1b4f9c0d3aa",
+      "size": 50654,
+      "publishedAt": "2026-11-03T04:57:27.228Z"
     },
     {
       "name": "status-panel",
-      "version": "2.0.3",
+      "version": "2.0.4",
       "description": "状态面板（独立插件）：在玩家屏幕上方显示服务器信息面板，内容由「面板 + 行」模板组成，行文本支持 26 个占位符插值（玩家属性、本服/全服在线、渔夫任务、BOSS 进度、生态群落等）与富文本（[c/HEX:] 颜色、[i:ID] 物品图标）。游戏服半 TsWebStatusPanel.dll 负责渲染并经 Terraria 9 号 StatusText 包下发，宿主半直接读写所选游戏服配置并计算全服在线数；全服在线数取自 online-stats（ctx.onlineStats），不再重建旧版的自研 SSE + HMAC 通道",
       "author": null,
       "tags": [
@@ -588,14 +588,14 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/status-panel-2.0.3.tgz",
-      "sha256": "83277a62a62db9b5b04124b79ee15d1be65f4f2686e13a493774b1ad39d7b23f",
-      "size": 78048,
-      "publishedAt": "2026-10-25T15:45:00.099Z"
+      "url": "packages/status-panel-2.0.4.tgz",
+      "sha256": "62ea4d306a72876eeb529702136395472f05253da9014cd4f1ebab02fc643da7",
+      "size": 77451,
+      "publishedAt": "2026-11-03T04:57:29.232Z"
     },
     {
       "name": "task-scheduler",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "description": "自动任务（独立插件）：按间隔或每天定时执行 TShock 命令，支持四种前提条件（无条件/在线人数/BOSS已击败/指定玩家在线）与顺序、并发两种执行方式，并保留完整执行记录。含游戏服半 TaskScheduler.dll（进程内 1 秒节拍调度 + 条件判定 + 命令执行 + 执行记录落库）。宿主半负责任务配置的存储、下发（失败重试/连接恢复补推/周期对账/自证）、界面与审计",
       "author": null,
       "tags": [
@@ -610,10 +610,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/task-scheduler-2.0.1.tgz",
-      "sha256": "b648823645d4b7f816dd65505d3d64345f14a38b81fb3b7ab6deec585785b484",
-      "size": 85275,
-      "publishedAt": "2026-10-25T15:45:00.597Z"
+      "url": "packages/task-scheduler-2.0.2.tgz",
+      "sha256": "49c33ddd081351db1f7762ba7d715b66a812e237ec73e45f6475f8f4370dd87a",
+      "size": 84498,
+      "publishedAt": "2026-11-03T04:57:31.035Z"
     },
     {
       "name": "vote",
@@ -637,7 +637,7 @@
     },
     {
       "name": "web",
-      "version": "2.0.4",
+      "version": "2.0.6",
       "description": "TSWeb Vue 3 插件界面宿主",
       "author": null,
       "tags": [],
@@ -647,10 +647,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/web-2.0.4.tgz",
-      "sha256": "bfbbc4fad1722449416bca51e16d915d6d54ac25eb403be2fbdc06c03efcebfe",
-      "size": 273336,
-      "publishedAt": "2026-10-31T14:12:32.650Z"
+      "url": "packages/web-2.0.6.tgz",
+      "sha256": "ec4bd095aef2a0e58120f0ea1d35f7226587c694139fd6b555e33ea437fd4301",
+      "size": 272814,
+      "publishedAt": "2026-11-03T04:57:38.329Z"
     },
     {
       "name": "world-info",
