@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-03T04:59:27.199Z",
+  "updated": "2026-11-03T09:24:41.218Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -335,8 +335,9 @@
     },
     {
       "name": "market",
-      "version": "2.2.1",
+      "version": "2.2.2",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底、离线本地目录模式与插件依赖先装）",
+      "releaseNotes": "市场详情显示当前版本更新说明；新版本发布时校验非空 releaseNotes，历史版本不回填。",
       "author": null,
       "tags": [
         "管理工具"
@@ -348,10 +349,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/market-2.2.1.tgz",
-      "sha256": "b616cb8bb5f1db3cf8bd0892830328da96c1dfb97683b1c7c9c63459b5fed378",
-      "size": 44033,
-      "publishedAt": "2026-10-31T07:12:32.531Z"
+      "url": "packages/market-2.2.2.tgz",
+      "sha256": "f1b14d8e1cb271ece91654a2ff7f4659f5f12179bfdb6378ee9e41baec43fcf5",
+      "size": 44503,
+      "publishedAt": "2026-11-03T09:24:40.231Z"
     },
     {
       "name": "online-stats",
