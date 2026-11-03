@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-11-03T11:10:53.5228839Z",
+  "channel": "cloudflare",
+  "base": "https://cdn.plugin.tlry.me",
+  "version": "2.2.2",
+  "releaseNotes": "市场详情显示当前版本更新说明；新版本发布时校验非空 releaseNotes，历史版本不回填。",
+  "package": "packages/market-2.2.2.tgz",
+  "size": 44503,
+  "sha256": "f1b14d8e1cb271ece91654a2ff7f4659f5f12179bfdb6378ee9e41baec43fcf5",
+  "indexSha256": "4834dd3454be43d203b9ca6c4bf8b50a996076611317f9533fbf8e7e9445ff52",
+  "packageCount": 32,
+  "unchangedOtherEntries": 31,
+  "previousVersion": "2.2.1",
+  "githubPushed": false
+}
