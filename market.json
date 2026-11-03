@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-03T12:44:20.878Z",
+  "updated": "2026-11-03T13:00:53.308Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -335,9 +335,9 @@
     },
     {
       "name": "market",
-      "version": "2.3.0",
+      "version": "2.3.1",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底、离线本地目录模式与插件依赖先装）",
-      "releaseNotes": "插件逐项加入服务端更新任务，离开页面仍继续执行并保留记录。新增独立任务页与圆环进度，待执行任务支持拖动排序和键盘调整。优化任务入口选中状态，更新完成后由用户主动刷新页面或处理待重启游戏服，不再自动重载界面。",
+      "releaseNotes": "简化插件市场操作文案：卡片、详情、已安装页和确认框统一显示“安装”或“更新”；等待与执行状态显示“等待安装/更新”和“安装/更新中”。保留服务端任务、拖动排序与手动刷新机制。",
       "author": null,
       "tags": [
         "管理工具"
@@ -349,10 +349,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/market-2.3.0.tgz",
-      "sha256": "b91af7765635d500d7f3e1b14e81751c1c54a4a1e668cf885d7b3d463587e638",
-      "size": 55693,
-      "publishedAt": "2026-11-03T12:44:20.190Z"
+      "url": "packages/market-2.3.1.tgz",
+      "sha256": "6458817143160a9a7f2ef4e800bb211eb63e53b9226aa9b8086588a237dfe93c",
+      "size": 55835,
+      "publishedAt": "2026-11-03T13:00:52.464Z"
     },
     {
       "name": "online-stats",
