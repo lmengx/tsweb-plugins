@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T13:45:15.986Z",
+  "updated": "2026-11-04T14:10:59.265Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -575,9 +575,9 @@
     },
     {
       "name": "qq-serve",
-      "version": "2.5.0",
+      "version": "2.5.2",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
-      "releaseNotes": "新增 QQ 控制台群管理，跟随当前模式显示：OneBot/混合模式按群号启用，官方模式用群资料和两秒刷新的最近消息辨认；官方群映射全自动，可删除关系及旧观测。所有群默认停用，升级后请在群管理手动启用；停用群阻止指令、按钮、审批及延迟回复。修复保存失败与退群并发时旧授权被恢复的问题。只读取本版本数据，不自动迁移旧配置。",
+      "releaseNotes": "修复 QQ 自动登录和进服密码登录的 SSC 背包同步顺序：先发送世界信息通知客户端启用 SSC，再恢复服务器角色存档。游戏内 /login、权限豁免及群管理保持原有行为。建议同时更新 registration 2.0.8，覆盖普通登录和自动注册入口。不迁移配置，不重置玩家存档。",
       "author": null,
       "tags": [
         "管理工具",
@@ -592,14 +592,14 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.5.0.tgz",
-      "sha256": "67c62d0ce228962b9943df79e669eade3077410378074e3233f03ecec3bfdf33",
-      "size": 311744,
-      "publishedAt": "2026-11-04T13:45:15.614Z"
+      "url": "packages/qq-serve-2.5.2.tgz",
+      "sha256": "27f2c0ae8b5b49cde338ff96dc2487e866e504f6fcbca71c972c556a28cf3626",
+      "size": 311743,
+      "publishedAt": "2026-11-04T14:10:58.609Z"
     },
     {
       "name": "registration",
-      "version": "2.0.7",
+      "version": "2.0.8",
       "description": "注册登录控制：默认注册、自动注册与白名单准入，QQ 角色由 QQ 插件验证",
       "author": null,
       "tags": [
@@ -614,10 +614,11 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/registration-2.0.7.tgz",
-      "sha256": "80b5f2576fe8b316b3e8a90a604c9bc9d4b506b3b140a78b5931cb7d6fa6ca36",
-      "size": 24765,
-      "publishedAt": "2026-11-03T04:57:23.760Z"
+      "url": "packages/registration-2.0.8.tgz",
+      "sha256": "9aec1f801ccee6a54558870e9a05ca4c1fdcbb1bc7f006d514e6e45723fc19df",
+      "size": 24909,
+      "publishedAt": "2026-11-04T14:10:59.265Z",
+      "releaseNotes": "修复普通密码登录和自动注册的 SSC 背包同步顺序：先推进连接状态并发送世界信息，再恢复服务器角色存档，最后触发登录完成事件。建议同时更新 qq-serve 2.5.2，覆盖 QQ 登录入口。不迁移配置，不重置玩家存档。"
     },
     {
       "name": "risk-control",

@@ -1,0 +1,114 @@
+{
+  "result": "passed",
+  "releasedAt": "2026-11-04T14:12:27.006Z",
+  "entries": [
+    {
+      "name": "qq-serve",
+      "version": "2.5.2",
+      "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
+      "releaseNotes": "修复 QQ 自动登录和进服密码登录的 SSC 背包同步顺序：先发送世界信息通知客户端启用 SSC，再恢复服务器角色存档。游戏内 /login、权限豁免及群管理保持原有行为。建议同时更新 registration 2.0.8，覆盖普通登录和自动注册入口。不迁移配置，不重置玩家存档。",
+      "author": null,
+      "tags": [
+        "管理工具",
+        "QQ管理"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "accessApi": 1,
+      "clientApi": 2,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/qq-serve-2.5.2.tgz",
+      "sha256": "27f2c0ae8b5b49cde338ff96dc2487e866e504f6fcbca71c972c556a28cf3626",
+      "size": 311743,
+      "publishedAt": "2026-11-04T14:10:58.609Z"
+    },
+    {
+      "name": "registration",
+      "version": "2.0.8",
+      "description": "注册登录控制：默认注册、自动注册与白名单准入，QQ 角色由 QQ 插件验证",
+      "author": null,
+      "tags": [
+        "管理工具"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "accessApi": 1,
+      "clientApi": 2,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/registration-2.0.8.tgz",
+      "sha256": "9aec1f801ccee6a54558870e9a05ca4c1fdcbb1bc7f006d514e6e45723fc19df",
+      "size": 24909,
+      "publishedAt": "2026-11-04T14:10:59.265Z",
+      "releaseNotes": "修复普通密码登录和自动注册的 SSC 背包同步顺序：先推进连接状态并发送世界信息，再恢复服务器角色存档，最后触发登录完成事件。建议同时更新 qq-serve 2.5.2，覆盖 QQ 登录入口。不迁移配置，不重置玩家存档。"
+    }
+  ],
+  "packageReview": [
+    {
+      "name": "qq-serve",
+      "version": "2.5.2",
+      "changed": [
+        "package.json",
+        "plugin/QqBind.dll"
+      ],
+      "added": [],
+      "removed": [],
+      "dllSha256": "1612f2de3e146dcd534cda518884e5603acf0748fb9a5e43020169121fa57e60",
+      "codeReview": {
+        "changed": [
+          "Properties/AssemblyInfo.cs",
+          "TsWebQqBind/QqBindPlugin.cs",
+          "TsWebQqBind/QqLogin.cs"
+        ],
+        "added": [],
+        "removed": []
+      }
+    },
+    {
+      "name": "registration",
+      "version": "2.0.8",
+      "changed": [
+        "package.json",
+        "plugin/TsWebRegistration.dll"
+      ],
+      "added": [],
+      "removed": [],
+      "dllSha256": "249c899f87f2c4b9b3535247460f3a9f6adba22a4aa069a5413e799b5dc7675e",
+      "codeReview": {
+        "changed": [
+          "Properties/AssemblyInfo.cs",
+          "TsWebRegistration/OrdinaryLogin.cs",
+          "TsWebRegistration/RegistrationPlugin.cs",
+          "TsWebRegistration/RegistrationPolicy.cs"
+        ],
+        "added": [],
+        "removed": []
+      }
+    }
+  ],
+  "indexSha256": "3360cf3062703d736379d1fb6039c912064f6dfaefa30665d4eaa7d308d1eb26",
+  "baselineSha256": "8ff79417cbbc6e4a05e35e1635fda0dc4d831b66c8df62503659890f53933db5",
+  "preservedOtherPackages": 35,
+  "review": {
+    "findings": [],
+    "regression": {
+      "tests": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "finalQqArtifactInstallation": "passed",
+    "finalRegistrationArtifactUpgrade": "passed",
+    "compiledDllComparison": "only login ordering, plugin versions and build revision"
+  },
+  "noAutomaticLegacyMigration": true,
+  "installedOnProduction": false,
+  "liveGameClientVerified": false,
+  "liveQQSent": false
+}
