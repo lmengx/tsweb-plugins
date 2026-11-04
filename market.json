@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T08:29:13.488Z",
+  "updated": "2026-11-04T08:35:07.690Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -53,6 +53,28 @@
       "sha256": "c91b7a8ba59ebdf49fdef908d95b52e50fb45b6d27fee1a730eb53b17952529d",
       "size": 196971,
       "publishedAt": "2026-11-03T04:57:08.495Z"
+    },
+    {
+      "name": "antiangel",
+      "version": "1.0.1",
+      "description": "检测 TerraAngel 隐藏存在感指纹，可配置警告与踢出；无前端页面。",
+      "releaseNotes": "首次发布无前端 Cordis 插件，支持市场安装、启停与分服同步；修正检测与卸载边界。",
+      "author": null,
+      "tags": [
+        "反作弊"
+      ],
+      "bundled": false,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [
+        "./plugin/antiangel.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/antiangel-1.0.1.tgz",
+      "sha256": "854b8f0a050892103bdbe1a64989700ef94fbca8fd2ecec2d8ea162b8e3f9eb7",
+      "size": 9269,
+      "publishedAt": "2026-11-04T08:35:07.111Z"
     },
     {
       "name": "apm",
@@ -118,9 +140,9 @@
     },
     {
       "name": "compat1456",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "为 Terraria 1.4.5.6 客户端提供 1.4.5.7/1.4.5.8 服务端协议兼容；无前端页面。",
-      "releaseNotes": "首次发布无前端 Cordis 插件；补充入站包边界与弹幕所有权检查，并保留 TShock 收包校验。",
+      "releaseNotes": "修复重复实例卸载误拆钩子、握手切换遗留状态及 NetModule ID 溢出；保留上一版重放安全修复。",
       "author": null,
       "tags": [
         "版本兼容"
@@ -133,10 +155,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/compat1456-1.0.0.tgz",
-      "sha256": "c64388b22c0d9cbbc0e6c59b732ada92d9e1b4627c91fe43cce4bde3e09ecb40",
-      "size": 16718,
-      "publishedAt": "2026-11-04T08:18:33.036Z"
+      "url": "packages/compat1456-1.0.1.tgz",
+      "sha256": "9cc983d2b90cda59cad40837ce30a10882b8c23745e137043698c166faedb26c",
+      "size": 17325,
+      "publishedAt": "2026-11-04T08:35:04.217Z"
     },
     {
       "name": "config-anything",
@@ -159,6 +181,28 @@
       "sha256": "1fe16f3b8373ef275cfffab29ab40539192e425df99943fbd46636480a7e6544",
       "size": 96798,
       "publishedAt": "2026-10-25T15:44:54.170Z"
+    },
+    {
+      "name": "connection-guard",
+      "version": "1.1.0",
+      "description": "连接防护：畸形包拦截、临时 IP 封禁与连接限流；无前端页面。",
+      "releaseNotes": "首次发布无前端 Cordis 插件，支持市场安装、启停与分服同步；修正检测与卸载边界。",
+      "author": null,
+      "tags": [
+        "漏洞修复"
+      ],
+      "bundled": false,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [
+        "./plugin/ConnectionGuard.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/connection-guard-1.1.0.tgz",
+      "sha256": "3656a43f0a799e37cc56bf1b4480eb265329c23f4da5f8141a1a992d59a6f81c",
+      "size": 14582,
+      "publishedAt": "2026-11-04T08:35:05.640Z"
     },
     {
       "name": "curfew",
