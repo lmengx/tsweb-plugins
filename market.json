@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-03T13:00:53.308Z",
+  "updated": "2026-11-04T07:40:49.651Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -335,9 +335,9 @@
     },
     {
       "name": "market",
-      "version": "2.3.1",
+      "version": "2.3.2",
       "description": "插件市场：从 tsweb-plugins 仓库拉取索引，下载 tgz 发行包并校验 sha256 后安装/更新到本机插件目录（含镜像兜底、离线本地目录模式与插件依赖先装）",
-      "releaseNotes": "简化插件市场操作文案：卡片、详情、已安装页和确认框统一显示“安装”或“更新”；等待与执行状态显示“等待安装/更新”和“安装/更新中”。保留服务端任务、拖动排序与手动刷新机制。",
+      "releaseNotes": "已安装页新增分服管理，可在任意游戏服独立启用或禁用插件。启用后自动同步 DLL，禁用后热卸载并删除该服已下发的 DLL；离线时保存操作，恢复连接后执行。分服设置在重连、面板重启和插件更新后保持。卸载结果以接收端回执为准，状态自动刷新，失败保留开关与面板供重试。",
       "author": null,
       "tags": [
         "管理工具"
@@ -349,10 +349,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/market-2.3.1.tgz",
-      "sha256": "6458817143160a9a7f2ef4e800bb211eb63e53b9226aa9b8086588a237dfe93c",
-      "size": 55835,
-      "publishedAt": "2026-11-03T13:00:52.464Z"
+      "url": "packages/market-2.3.2.tgz",
+      "sha256": "44534264edc81407b75bbfb07fd4d9391932ba39a20f33cb58ed63eb0baa459d",
+      "size": 56709,
+      "publishedAt": "2026-11-04T07:40:48.605Z"
     },
     {
       "name": "online-stats",
