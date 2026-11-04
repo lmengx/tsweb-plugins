@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-11-04T10:41:48.352Z",
+  "result": "passed",
+  "indexSha256": "6ada00084bb993c5924953cac9199918a5acfc88749d28237b2386c9bc002e8d",
+  "unchangedEntries": 35,
+  "packages": [
+    {
+      "name": "vote",
+      "version": "2.1.2",
+      "size": 90182,
+      "sha256": "fcaf6f437518ebca42189f450dcf146163301cbe21e159e4dcf7988391835969"
+    }
+  ],
+  "marketInstall": {
+    "testedAt": "2026-11-04T10:40:40.017Z",
+    "result": "passed",
+    "indexSha256": "6ada00084bb993c5924953cac9199918a5acfc88749d28237b2386c9bc002e8d",
+    "installed": [
+      "vote@2.1.2",
+      "qq-render@2.0.0"
+    ],
+    "dimensions": [
+      {
+        "width": 960,
+        "height": 3575
+      },
+      {
+        "width": 960,
+        "height": 1451
+      }
+    ],
+    "work": "C:\\Users\\lyt\\Documents\\GitHub\\TsWeb\\worktrees\\cordis-vue\\tmp\\market-release-zom0Be",
+    "checks": [
+      "package checksums and metadata",
+      "actual market install",
+      "real PNG rendering of 120-line description",
+      "archived admin preview and public exclusion",
+      "Chrome settings and archived preview",
+      "independent plugin disable and re-enable"
+    ],
+    "noLiveQqMessagesSent": true
+  },
+  "regression": {
+    "tests": 48,
+    "passed": 48,
+    "failures": 0,
+    "skipped": 0,
+    "noLiveQqMessagesSent": true
+  },
+  "packageDiff": {
+    "baseline": "vote@2.1.1",
+    "release": "vote@2.1.2",
+    "changed": [
+      "dist/index.js",
+      "dist/style.css",
+      "package.json",
+      "README.md",
+      "render.js",
+      "rendering.js"
+    ],
+    "cssChange": "Vue scoped style identifier only"
+  }
+}

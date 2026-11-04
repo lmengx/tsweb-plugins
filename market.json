@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T10:20:28.853Z",
+  "updated": "2026-11-04T10:39:14.906Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -709,9 +709,9 @@
     },
     {
       "name": "vote",
-      "version": "2.1.1",
+      "version": "2.1.2",
       "description": "玩家投票：网页与 QQ 群参与、游玩时长加权、自主提案和轮次管理",
-      "releaseNotes": "轮次列表和结果区在页面内独立滚动；投票管理新增图片样式与真实结果预览，独立保存主题、强调色、分页数与说明开关；图片按完整选项分组并重复标题与范围。配合 QQ 服务 2.4.1 将多页合为一条回复。",
+      "releaseNotes": "修复多行投票说明导致图片超高：说明按行参与分页，保留全文与完整选项；说明页使用专用页脚。管理员可预览归档轮次，图片明确标记已归档；预览仅传递绘图所需字段。",
       "author": null,
       "tags": [
         "QQ管理"
@@ -723,10 +723,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/vote-2.1.1.tgz",
-      "sha256": "eb8db5213f245acd2e0a7487bd7aa4033b69b0104320e118dbfff3dd03a4854b",
-      "size": 89889,
-      "publishedAt": "2026-11-04T10:20:28.697Z"
+      "url": "packages/vote-2.1.2.tgz",
+      "sha256": "fcaf6f437518ebca42189f450dcf146163301cbe21e159e4dcf7988391835969",
+      "size": 90182,
+      "publishedAt": "2026-11-04T10:38:57.656Z"
     },
     {
       "name": "web",
