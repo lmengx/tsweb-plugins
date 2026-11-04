@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T15:13:20.816Z",
+  "updated": "2026-11-04T15:19:32.702Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -575,9 +575,9 @@
     },
     {
       "name": "qq-serve",
-      "version": "2.5.5",
+      "version": "2.5.6",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
-      "releaseNotes": "修正 OneBot 群聊专用边界：忽略全部私信，移除主动私信发密、领取密码和改密码；help 仅显示群内可用指令。账号注册与密码服务由官方机器人提供，纯 OneBot 注册请求引导管理员办理，不再创建无法领取密码的账号。保留群聊绑定、全服在线、投票图片和帮助缓存。",
+      "releaseNotes": "恢复旧版 OneBot 注册与私聊改密流程：群内注册成功后提示私信“改密码 新密码”，不自动私信发送初始密码，不提供领取密码；私信只处理改密码。官方机器人注册后自动私信发送初始密码及私信改密保持不变。群聊 help 展示注册和仅私聊改密码，保留全服在线、投票图片与帮助缓存。",
       "author": null,
       "tags": [
         "管理工具",
@@ -592,10 +592,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.5.5.tgz",
-      "sha256": "2a35040f50ddff6d76740fb44dc24c902cd4a59b292ddb532a70e82f0289a9bb",
-      "size": 319039,
-      "publishedAt": "2026-11-04T15:05:39.442Z"
+      "url": "packages/qq-serve-2.5.6.tgz",
+      "sha256": "ccbad9c4cfb0f2699f0c7642feeff9cea1a077e99af77ed8d1b6dc125f7615da",
+      "size": 319663,
+      "publishedAt": "2026-11-04T15:19:32.342Z"
     },
     {
       "name": "registration",
