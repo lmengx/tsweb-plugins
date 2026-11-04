@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T08:24:02.236Z",
+  "updated": "2026-11-04T08:29:13.488Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -597,8 +597,9 @@
     },
     {
       "name": "shopui",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "虚拟商店：独立旅商、四十格商品布局、分类控件、价格与进度条件编辑",
+      "releaseNotes": "修复删除配置后首次初始化失败：新建默认商店包含唯一标识和显式商品格子。首次读取失败明确提示商店未启用；旧配置仍严格校验，不自动补字段或迁移。",
       "author": null,
       "tags": [
         "机制拓展"
@@ -612,10 +613,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/shopui-1.0.3.tgz",
-      "sha256": "dcaf9b9561a4c7d9b947271336b6c7993a1f1a5396f5df4fa006f1b4f9c0d3aa",
-      "size": 50654,
-      "publishedAt": "2026-11-03T04:57:27.228Z"
+      "url": "packages/shopui-1.0.4.tgz",
+      "sha256": "93b82303f469d989d78d0dd03570712b821a969f0ccc31373bb10d12e8489cf1",
+      "size": 50997,
+      "publishedAt": "2026-11-04T08:29:00.406Z"
     },
     {
       "name": "status-panel",
