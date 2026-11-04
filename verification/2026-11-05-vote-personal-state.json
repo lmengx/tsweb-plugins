@@ -1,0 +1,257 @@
+{
+  "result": "passed",
+  "checkedAt": "2026-11-04T16:23:37.688Z",
+  "indexSha256": "634c086b4437940077264474c6a0f9a1a683c8b2fb37555c0701e7043bab4314",
+  "unchangedEntries": 35,
+  "packages": {
+    "result": "passed",
+    "unchangedEntries": 35,
+    "packages": [
+      {
+        "name": "qq-serve",
+        "version": "2.5.7",
+        "changed": [
+          "README.md",
+          "onebot/index.js",
+          "onebot/votes.js",
+          "package.json"
+        ],
+        "unchangedFiles": 65,
+        "sha256": "1397cd2ff4d33d0a2447999aef8d84a02352c38a90afaa1bbf06c8b9a6abe2d1"
+      },
+      {
+        "name": "vote",
+        "version": "2.1.5",
+        "changed": [
+          "README.md",
+          "bot.js",
+          "package.json",
+          "render.js"
+        ],
+        "unchangedFiles": 19,
+        "sha256": "8180b22218d727d8c3ba4351b2579b265e47984c8290b910a8ebb7075e18b463"
+      }
+    ]
+  },
+  "sscBaselinePreserved": true,
+  "immutableObjectConflictGuard": true,
+  "marketInstall": {
+    "result": "passed",
+    "indexSha256": "634c086b4437940077264474c6a0f9a1a683c8b2fb37555c0701e7043bab4314",
+    "marketPackages": 37,
+    "backendsReady": 40,
+    "browserClientsLoaded": [
+      "account-attributes",
+      "anti-cheat",
+      "apm",
+      "base",
+      "boss-limit",
+      "config-anything",
+      "curfew",
+      "dimensions",
+      "emote-command",
+      "file-manager",
+      "gameplay-settings",
+      "history",
+      "house",
+      "legacy-import",
+      "market",
+      "performance",
+      "personal-permissions",
+      "promotion",
+      "qq-serve",
+      "registration",
+      "risk-control",
+      "shopui",
+      "status-panel",
+      "task-scheduler",
+      "vote",
+      "world-info"
+    ],
+    "checks": [
+      "package checksums and embedded compatibility",
+      "market list compatibility",
+      "actual market installer and guarded loader",
+      "qq-serve and vote disable and re-enable",
+      "installed command metadata and four vote themes",
+      "help image startup warmup and disk cache reuse",
+      "actual Chrome frontend initialization"
+    ],
+    "unchangedEntries": 35,
+    "packages": [
+      {
+        "name": "qq-serve",
+        "version": "2.5.7",
+        "changed": [
+          "README.md",
+          "onebot/index.js",
+          "onebot/votes.js",
+          "package.json"
+        ],
+        "unchangedFiles": 65,
+        "sha256": "1397cd2ff4d33d0a2447999aef8d84a02352c38a90afaa1bbf06c8b9a6abe2d1"
+      },
+      {
+        "name": "vote",
+        "version": "2.1.5",
+        "changed": [
+          "README.md",
+          "bot.js",
+          "package.json",
+          "render.js"
+        ],
+        "unchangedFiles": 19,
+        "sha256": "8180b22218d727d8c3ba4351b2579b265e47984c8290b910a8ebb7075e18b463"
+      }
+    ],
+    "verificationDirectory": "tmp/market-release-nvS9fY",
+    "accessContracts": {
+      "result": "passed",
+      "contracts": 34,
+      "modules": 48,
+      "routes": 378,
+      "uiFeatures": 53
+    }
+  },
+  "regression": {
+    "tests": 488,
+    "passed": 487,
+    "failures": 0,
+    "skipped": 1,
+    "accessContractsPassed": true,
+    "noLiveQqMessagesSent": true
+  },
+  "helpCache": {
+    "result": "passed",
+    "startupWarmup": true,
+    "realPng": true,
+    "diskReuseAfterPluginReload": true,
+    "caches": [
+      {
+        "file": "tsweb-help-74d1a9e17a2212edc06c96643c1528e870d4cbbd52b26b9030dd45f62062a907.json",
+        "mtimeMs": 1793808718400.6929,
+        "pages": 2
+      },
+      {
+        "file": "tsweb-help-9efe296f95b2a3251c91fdac0ff2d70b74227447d0f91ba10cae26b967310f15.json",
+        "mtimeMs": 1793808718401.7537,
+        "pages": 2
+      }
+    ],
+    "noLiveQqMessagesSent": true
+  },
+  "commands": {
+    "result": "passed",
+    "onebotGroupRegistration": true,
+    "onebotPrivatePasswordOnly": true,
+    "noOnebotAutoPasswordDelivery": true,
+    "noOnebotClaim": true,
+    "officialPasswordHelpRetained": true,
+    "installedAdapterFlow": true,
+    "installedCompactVoteCommands": true,
+    "installedCallerIsolation": true,
+    "installedPersonalizedOverview": true,
+    "noOnebotUtilityCommands": true,
+    "allServerOnlineHelp": true,
+    "oldVoteCommands": true,
+    "samples": [
+      {
+        "theme": "mist",
+        "scenario": "sample",
+        "width": 960,
+        "height": 1132
+      },
+      {
+        "theme": "mist",
+        "scenario": "voted",
+        "width": 960,
+        "height": 1426
+      },
+      {
+        "theme": "mist",
+        "scenario": "proposed",
+        "width": 960,
+        "height": 1543
+      },
+      {
+        "theme": "space",
+        "scenario": "sample",
+        "width": 960,
+        "height": 1134
+      },
+      {
+        "theme": "space",
+        "scenario": "voted",
+        "width": 960,
+        "height": 1348
+      },
+      {
+        "theme": "space",
+        "scenario": "proposed",
+        "width": 960,
+        "height": 1466
+      },
+      {
+        "theme": "cream",
+        "scenario": "sample",
+        "width": 960,
+        "height": 1136
+      },
+      {
+        "theme": "cream",
+        "scenario": "voted",
+        "width": 960,
+        "height": 1226
+      },
+      {
+        "theme": "cream",
+        "scenario": "proposed",
+        "width": 960,
+        "height": 1344
+      },
+      {
+        "theme": "pixel",
+        "scenario": "sample",
+        "width": 960,
+        "height": 1134
+      },
+      {
+        "theme": "pixel",
+        "scenario": "voted",
+        "width": 960,
+        "height": 1348
+      },
+      {
+        "theme": "pixel",
+        "scenario": "proposed",
+        "width": 960,
+        "height": 1466
+      }
+    ],
+    "noLiveQqMessagesSent": true
+  },
+  "source": {
+    "changes": {
+      "qq-serve": [
+        "onebot/index.js",
+        "onebot/votes.js"
+      ],
+      "vote": [
+        "bot.js",
+        "render.js"
+      ]
+    },
+    "added": {
+      "qq-serve": [],
+      "vote": []
+    },
+    "versions": {
+      "qq-serve": "2.5.7",
+      "vote": "2.1.5"
+    },
+    "tests": 488,
+    "passed": 487,
+    "skipped": 1,
+    "source": "Fresh checksum-verified CDN archives; overlay only reviewed OneBot vote ingress, text fallback and vote capability/renderer. Preserve every other byte, official password delivery, SSC DLL, SDK and frontend."
+  }
+}
