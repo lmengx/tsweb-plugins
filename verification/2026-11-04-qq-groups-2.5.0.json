@@ -1,0 +1,115 @@
+{
+  "result": "passed",
+  "releasedAt": "2026-11-04T13:46:55.926Z",
+  "entry": {
+    "name": "qq-serve",
+    "version": "2.5.0",
+    "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
+    "releaseNotes": "新增 QQ 控制台群管理，跟随当前模式显示：OneBot/混合模式按群号启用，官方模式用群资料和两秒刷新的最近消息辨认；官方群映射全自动，可删除关系及旧观测。所有群默认停用，升级后请在群管理手动启用；停用群阻止指令、按钮、审批及延迟回复。修复保存失败与退群并发时旧授权被恢复的问题。只读取本版本数据，不自动迁移旧配置。",
+    "author": null,
+    "tags": [
+      "管理工具",
+      "QQ管理"
+    ],
+    "bundled": false,
+    "hasClient": true,
+    "accessApi": 1,
+    "clientApi": 2,
+    "dll": [
+      "./plugin/*.dll"
+    ],
+    "requires": [],
+    "deploy": "all",
+    "url": "packages/qq-serve-2.5.0.tgz",
+    "sha256": "67c62d0ce228962b9943df79e669eade3077410378074e3233f03ecec3bfdf33",
+    "size": 311744,
+    "publishedAt": "2026-11-04T13:45:15.614Z"
+  },
+  "indexSha256": "0cf26b2275d94cb2cc55bf2575d8ef1d7e38adcf398dab189438e9cfdfb0c479",
+  "baselineSha256": "f304a0da6d7d493e10ae67d95c7058d41d76fff2e8c9f351e2c5030d88cd3364",
+  "preservedOtherPackages": 36,
+  "packageReview": {
+    "result": "passed",
+    "entry": {
+      "name": "qq-serve",
+      "version": "2.5.0",
+      "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
+      "releaseNotes": "新增 QQ 控制台群管理，跟随当前模式显示：OneBot/混合模式按群号启用，官方模式用群资料和两秒刷新的最近消息辨认；官方群映射全自动，可删除关系及旧观测。所有群默认停用，升级后请在群管理手动启用；停用群阻止指令、按钮、审批及延迟回复。修复保存失败与退群并发时旧授权被恢复的问题。只读取本版本数据，不自动迁移旧配置。",
+      "author": null,
+      "tags": [
+        "管理工具",
+        "QQ管理"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "accessApi": 1,
+      "clientApi": 2,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/qq-serve-2.5.0.tgz",
+      "sha256": "67c62d0ce228962b9943df79e669eade3077410378074e3233f03ecec3bfdf33",
+      "size": 311744,
+      "publishedAt": "2026-11-04T13:45:15.614Z"
+    },
+    "unchangedMarketEntries": 36,
+    "changed": [
+      "bind/identity/correspond.js",
+      "bind/identity/gate.js",
+      "bind/identity/group-map.js",
+      "bind/identity/official-command.js",
+      "dist/index.js",
+      "dist/style.css",
+      "mode-access.js",
+      "mode.js",
+      "official/commands.js",
+      "official/index.js",
+      "official/runtime/sdk.mjs",
+      "official/service.js",
+      "onebot/client.js",
+      "onebot/index.js",
+      "onebot/README.md",
+      "package.json",
+      "README.md"
+    ],
+    "added": [
+      "groups.js"
+    ],
+    "removed": [],
+    "unchangedGameDll": true
+  },
+  "browser": {
+    "passed": true,
+    "updateMs": 2339,
+    "modes": [
+      "official",
+      "hybrid",
+      "onebot"
+    ],
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "mobileNoOverflow": true,
+    "runtimeErrors": [],
+    "mappingDelete": true,
+    "stopsAfterUnmount": true,
+    "liveQQ": false
+  },
+  "regression": {
+    "tests": 431,
+    "passed": 430,
+    "failed": 0,
+    "skipped": 1,
+    "skipReason": "No captured platform JSONL replay fixture",
+    "consoleTests": 1,
+    "finalArtifactInstallation": "passed",
+    "accessContracts": "passed",
+    "regressionFix": "Failed authorization write cannot undo concurrent leave/rejoin revocation"
+  },
+  "noAutomaticLegacyMigration": true,
+  "installedOnProduction": false,
+  "liveQQSent": false
+}
