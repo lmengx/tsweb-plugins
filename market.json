@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T14:10:59.265Z",
+  "updated": "2026-11-04T14:16:28.240Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -575,9 +575,9 @@
     },
     {
       "name": "qq-serve",
-      "version": "2.5.2",
+      "version": "2.5.3",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
-      "releaseNotes": "修复 QQ 自动登录和进服密码登录的 SSC 背包同步顺序：先发送世界信息通知客户端启用 SSC，再恢复服务器角色存档。游戏内 /login、权限豁免及群管理保持原有行为。建议同时更新 registration 2.0.8，覆盖普通登录和自动注册入口。不迁移配置，不重置玩家存档。",
+      "releaseNotes": "帮助按当前官方/OneBot/混合模式、群聊/私聊、指令开关与可用服务动态筛选；恢复旧版风格的分组帮助图片、内存/磁盘缓存、启动预热与并发合并，模式/主题/能力变化自动换缓存，失败回退同源文字。",
       "author": null,
       "tags": [
         "管理工具",
@@ -592,10 +592,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.5.2.tgz",
-      "sha256": "27f2c0ae8b5b49cde338ff96dc2487e866e504f6fcbca71c972c556a28cf3626",
-      "size": 311743,
-      "publishedAt": "2026-11-04T14:10:58.609Z"
+      "url": "packages/qq-serve-2.5.3.tgz",
+      "sha256": "ea35938b0ce8a44d9bbac76c6f196852b899beef068d69af1ad409f387ef0a0c",
+      "size": 318090,
+      "publishedAt": "2026-11-04T14:16:27.755Z"
     },
     {
       "name": "registration",
