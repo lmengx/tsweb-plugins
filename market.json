@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T16:17:04.766Z",
+  "updated": "2026-11-04T16:47:22.700Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -575,9 +575,9 @@
     },
     {
       "name": "qq-serve",
-      "version": "2.5.7",
+      "version": "2.5.8",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
-      "releaseNotes": "恢复旧版无空格「参与投票1」「参与投票选项名」「投票提案内容」语法，查询及回执图片显示唤起者个人投票状态；保留群聊注册后提示私聊改密、官方私信发密及帮助缓存。",
+      "releaseNotes": "OneBot 启用图片时统一单条图片反馈，补齐我的信息、注册、绑定、改密与错误提示；多页等比合并，超限保留全部页；修复账户数据和平台文案，发送前复查授权，发送失败不重复回复。",
       "author": null,
       "tags": [
         "管理工具",
@@ -592,10 +592,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.5.7.tgz",
-      "sha256": "1397cd2ff4d33d0a2447999aef8d84a02352c38a90afaa1bbf06c8b9a6abe2d1",
-      "size": 320298,
-      "publishedAt": "2026-11-04T16:10:49.898Z"
+      "url": "packages/qq-serve-2.5.8.tgz",
+      "sha256": "1c778df06099fc6fccbccd540852919c2995c121baabbdedd53c3bfa66e48fc1",
+      "size": 321998,
+      "publishedAt": "2026-11-04T16:47:22.700Z"
     },
     {
       "name": "registration",
