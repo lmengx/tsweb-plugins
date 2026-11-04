@@ -1,0 +1,184 @@
+{
+  "result": "passed",
+  "releasedAt": "2026-11-04T15:13:20.816Z",
+  "entries": [
+    {
+      "name": "servers",
+      "version": "0.1.6",
+      "description": "TShock 服务器注册表 + REST token 代理 + 命令接口",
+      "releaseNotes": "修复 Host SSE 握手后立即断线或读取失败的竞态：提交连接成功前复核本次流与 session 仍有效，失效时立即按既有退避重连，不再误报成功或等待心跳超时。初次连接与自动重连均覆盖，无需更新前端或游戏服 DLL。",
+      "author": null,
+      "tags": [],
+      "bundled": true,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/servers-0.1.6.tgz",
+      "sha256": "9de03e0c3168d6c32fa9cbdf02b53a3e3dc1db3356ef3507079eeffee745c446",
+      "size": 23999,
+      "publishedAt": "2026-11-04T15:11:36.264Z"
+    }
+  ],
+  "indexSha256": "b9321f55d358ebae12641401f5b5030c0cfecfbbfe23d2558428f621529afa16",
+  "baselineSha256": "5353bb0957ab275917b49c1c676b5e61cd29cc84d39c546455d8ad8adfe1ded7",
+  "preservedOtherPackages": 36,
+  "verification": {
+    "connectionRegressionTests": 43,
+    "newBufferedStreamRaceCases": 4,
+    "packagedRecoveryTests": 17,
+    "actualPackageUpgradeAndRollbackTests": 2,
+    "failures": 0,
+    "liveStreamAndSessionRevalidatedBeforeSuccess": true,
+    "failedHandshakeKeepsBackoff": true,
+    "uiChanged": false
+  },
+  "gameDllsChanged": false,
+  "installedOnProduction": true,
+  "production": {
+    "verifiedAt": "2026-11-04T15:15:16.733Z",
+    "origin": "http://43.248.3.138:39999",
+    "tasks": [
+      {
+        "id": "f0fd96a3-3e21-4f42-96ff-c72d46951dff",
+        "name": "servers",
+        "action": "update",
+        "version": "0.1.6",
+        "sha256": "9de03e0c3168d6c32fa9cbdf02b53a3e3dc1db3356ef3507079eeffee745c446",
+        "size": 23999,
+        "hasClient": false,
+        "dependencies": [],
+        "installDeps": false,
+        "state": "done",
+        "createdAt": 1793805255680,
+        "refreshRequired": false,
+        "refreshAcknowledged": false,
+        "error": "",
+        "startedAt": 1793805255788,
+        "warning": "服务器管理已更新，请刷新页面；面板连接会自动重新建立",
+        "finishedAt": 1793805257377,
+        "restartServerIds": [],
+        "progress": null
+      }
+    ],
+    "serversPlugin": {
+      "name": "servers",
+      "version": "0.1.6",
+      "backendState": "ready",
+      "error": null
+    },
+    "connections": [
+      {
+        "id": "f0dfccf2-4460-4053-b450-4679f18dfa41",
+        "name": "开荒服",
+        "status": "connected",
+        "restConnected": true,
+        "hasSse": true,
+        "clientId": "0cae0488-cbb2-453b-b2a2-8eeb87d79ea5",
+        "deploymentError": null,
+        "events": [
+          {
+            "time": 1793805257263,
+            "type": "status",
+            "message": "connecting → connected: Host SSE 握手完成"
+          },
+          {
+            "time": 1793805257259,
+            "type": "sse-connected",
+            "message": "SSE clientId=0cae0488-cbb2-453b-b2a2-8eeb87d79ea5"
+          },
+          {
+            "time": 1793805257155,
+            "type": "status",
+            "message": "disconnected → connecting: 开始连接"
+          }
+        ]
+      },
+      {
+        "id": "2d997e7c-7333-4bd4-b25a-e7f5d3c010ab",
+        "name": "建筑服",
+        "status": "connected",
+        "restConnected": true,
+        "hasSse": true,
+        "clientId": "a5129a9f-2cdb-410d-a027-39446b347389",
+        "deploymentError": null,
+        "events": [
+          {
+            "time": 1793805257268,
+            "type": "status",
+            "message": "connecting → connected: Host SSE 握手完成"
+          },
+          {
+            "time": 1793805257266,
+            "type": "sse-connected",
+            "message": "SSE clientId=a5129a9f-2cdb-410d-a027-39446b347389"
+          },
+          {
+            "time": 1793805257157,
+            "type": "status",
+            "message": "disconnected → connecting: 开始连接"
+          }
+        ]
+      }
+    ],
+    "sscPlugins": [
+      {
+        "name": "qq-serve",
+        "version": "2.5.3",
+        "servers": [
+          {
+            "id": "f0dfccf2-4460-4053-b450-4679f18dfa41",
+            "state": "loaded",
+            "phase": "synced",
+            "error": null,
+            "runningHash": "24e3affbe5ca2f9f14e87e16d9cf29181389736c43b4a8972265b9de04a800e1",
+            "desiredHash": "24e3affbe5ca2f9f14e87e16d9cf29181389736c43b4a8972265b9de04a800e1",
+            "runningHashMatches": true,
+            "session": "0cae0488-cbb2-453b-b2a2-8eeb87d79ea5"
+          },
+          {
+            "id": "2d997e7c-7333-4bd4-b25a-e7f5d3c010ab",
+            "state": "loaded",
+            "phase": "synced",
+            "error": null,
+            "runningHash": "24e3affbe5ca2f9f14e87e16d9cf29181389736c43b4a8972265b9de04a800e1",
+            "desiredHash": "24e3affbe5ca2f9f14e87e16d9cf29181389736c43b4a8972265b9de04a800e1",
+            "runningHashMatches": true,
+            "session": "a5129a9f-2cdb-410d-a027-39446b347389"
+          }
+        ]
+      },
+      {
+        "name": "registration",
+        "version": "2.0.8",
+        "servers": [
+          {
+            "id": "f0dfccf2-4460-4053-b450-4679f18dfa41",
+            "state": "loaded",
+            "phase": "synced",
+            "error": null,
+            "runningHash": "355037479dd3759f58d11a30a36d3fe36c09251e59d89e61c0b3cb046728006f",
+            "desiredHash": "355037479dd3759f58d11a30a36d3fe36c09251e59d89e61c0b3cb046728006f",
+            "runningHashMatches": true,
+            "session": "0cae0488-cbb2-453b-b2a2-8eeb87d79ea5"
+          },
+          {
+            "id": "2d997e7c-7333-4bd4-b25a-e7f5d3c010ab",
+            "state": "loaded",
+            "phase": "synced",
+            "error": null,
+            "runningHash": "355037479dd3759f58d11a30a36d3fe36c09251e59d89e61c0b3cb046728006f",
+            "desiredHash": "355037479dd3759f58d11a30a36d3fe36c09251e59d89e61c0b3cb046728006f",
+            "runningHashMatches": true,
+            "session": "a5129a9f-2cdb-410d-a027-39446b347389"
+          }
+        ]
+      }
+    ],
+    "uiChanged": false,
+    "gameDllsChanged": false,
+    "gameRestarted": false,
+    "liveGameLoginTested": false
+  }
+}

@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T15:05:39.915Z",
+  "updated": "2026-11-04T15:13:20.816Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -644,9 +644,9 @@
     },
     {
       "name": "servers",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "description": "TShock 服务器注册表 + REST token 代理 + 命令接口",
-      "releaseNotes": "移除自动降级机制：游戏服重启期间保持重连，收到有效 Host SSE 握手才报告完整连接成功。REST 可用性独立保留，SSE 以 1–30 秒退避重试；鉴权或协议错误明确报告。修复仅收到响应头就显示已连接、测试连接覆盖真实状态的问题；手动断开取消所有重连。搭配 web 2.0.10 显示准确状态，无需更新游戏服 DLL。",
+      "releaseNotes": "修复 Host SSE 握手后立即断线或读取失败的竞态：提交连接成功前复核本次流与 session 仍有效，失效时立即按既有退避重连，不再误报成功或等待心跳超时。初次连接与自动重连均覆盖，无需更新前端或游戏服 DLL。",
       "author": null,
       "tags": [],
       "bundled": true,
@@ -655,10 +655,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/servers-0.1.5.tgz",
-      "sha256": "3e4a77daf7e7be277b3d47abc1c3a9093002b89457b1f68615c27152863be363",
-      "size": 23876,
-      "publishedAt": "2026-11-04T14:54:56.045Z"
+      "url": "packages/servers-0.1.6.tgz",
+      "sha256": "9de03e0c3168d6c32fa9cbdf02b53a3e3dc1db3356ef3507079eeffee745c446",
+      "size": 23999,
+      "publishedAt": "2026-11-04T15:11:36.264Z"
     },
     {
       "name": "shopui",
