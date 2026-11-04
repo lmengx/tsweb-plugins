@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T10:39:14.906Z",
+  "updated": "2026-11-04T12:08:44.084Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -34,8 +34,9 @@
     },
     {
       "name": "anti-cheat",
-      "version": "2.2.1",
+      "version": "2.3.0",
       "description": "反作弊：物品与弹幕检测、物品收支日志、反恶性漏洞及防刷保护。文件管理由 file-manager 独立提供，其余旧 TSWeb 管理业务已移除。",
+      "releaseNotes": "物品和弹幕支持独立多配置、默认预设/空白/复制创建与草稿保留；Boss 列表显示规则数量，命令参数编辑与未保存提示更清晰；新增可搜索配置选择器，新建方式、复制来源和名称统一在模态框内完成，适配窄屏内部滚动。",
       "author": null,
       "tags": [
         "反作弊"
@@ -49,10 +50,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/anti-cheat-2.2.1.tgz",
-      "sha256": "c91b7a8ba59ebdf49fdef908d95b52e50fb45b6d27fee1a730eb53b17952529d",
-      "size": 196971,
-      "publishedAt": "2026-11-03T04:57:08.495Z"
+      "url": "packages/anti-cheat-2.3.0.tgz",
+      "sha256": "8b908b559ef99ee913eb113141446e67fef1f98793c1727bd1a0e3149acfabac",
+      "size": 211109,
+      "publishedAt": "2026-11-04T12:07:31.034Z"
     },
     {
       "name": "antiangel",

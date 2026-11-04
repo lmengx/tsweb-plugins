@@ -1,0 +1,373 @@
+{
+  "checkedAt": "2026-11-04T12:15:05.894Z",
+  "result": "passed",
+  "indexSha256": "629d840fb90271ab125f9ff3bb1a8d2f0410cad3f818a6be379b4aa3be1f22e8",
+  "unchangedEntries": 36,
+  "packages": [
+    {
+      "name": "anti-cheat",
+      "version": "2.3.0",
+      "size": 211109,
+      "sha256": "8b908b559ef99ee913eb113141446e67fef1f98793c1727bd1a0e3149acfabac"
+    }
+  ],
+  "marketInstall": {
+    "testedAt": "2026-11-04T12:14:13.901Z",
+    "result": "passed",
+    "indexSha256": "629d840fb90271ab125f9ff3bb1a8d2f0410cad3f818a6be379b4aa3be1f22e8",
+    "marketPackages": [
+      {
+        "name": "account-attributes",
+        "version": "1.0.2",
+        "sha256": "19e39c3c69b456f63ecad23c8c3e9219d787ae564289d91eb27887f1f4348f7d"
+      },
+      {
+        "name": "anti-cheat",
+        "version": "2.3.0",
+        "sha256": "8b908b559ef99ee913eb113141446e67fef1f98793c1727bd1a0e3149acfabac"
+      },
+      {
+        "name": "antiangel",
+        "version": "1.0.1",
+        "sha256": "854b8f0a050892103bdbe1a64989700ef94fbca8fd2ecec2d8ea162b8e3f9eb7"
+      },
+      {
+        "name": "apm",
+        "version": "1.2.3",
+        "sha256": "735a70126b2d37414c01dca46c929fdfaa80769cd45f247ddd024920e4412284"
+      },
+      {
+        "name": "base",
+        "version": "2.4.2",
+        "sha256": "de50478d1c71daf4919473188be82cccdf57998d483d067fa7705841980e166d"
+      },
+      {
+        "name": "boss-limit",
+        "version": "1.0.4",
+        "sha256": "8bd62a2b16fa2fb56be497db7ce9b09ed0d06d4dbe37e960e723f4bac4922741"
+      },
+      {
+        "name": "compat1456",
+        "version": "1.0.1",
+        "sha256": "9cc983d2b90cda59cad40837ce30a10882b8c23745e137043698c166faedb26c"
+      },
+      {
+        "name": "config-anything",
+        "version": "1.5.1",
+        "sha256": "1fe16f3b8373ef275cfffab29ab40539192e425df99943fbd46636480a7e6544"
+      },
+      {
+        "name": "connection-guard",
+        "version": "1.1.0",
+        "sha256": "3656a43f0a799e37cc56bf1b4480eb265329c23f4da5f8141a1a992d59a6f81c"
+      },
+      {
+        "name": "curfew",
+        "version": "1.0.4",
+        "sha256": "dc659836cadc0c5ba0dfe415e0132749057cd07d57ca7302f5527916ca6d1ea0"
+      },
+      {
+        "name": "dimensions",
+        "version": "1.0.3",
+        "sha256": "e5351d6dc8305b37e959990e0d5ed5dea72a6514c2c2e1bdce494ebeace8f344"
+      },
+      {
+        "name": "emote-command",
+        "version": "1.1.2",
+        "sha256": "e6cac23a5adbd4b4ca8292f87420d500622709f860f792a4341be85286a31545"
+      },
+      {
+        "name": "file-manager",
+        "version": "1.4.2",
+        "sha256": "09d6cfcf837b44caa5c96d8cdc801a08791609b273acf6c6723b31cbfd19c798"
+      },
+      {
+        "name": "gameplay-settings",
+        "version": "1.3.3",
+        "sha256": "09c27dc9fd4e2bbc0b4099f820ed324969a7cdf8ae151ccf61e1fdbda02a1d19"
+      },
+      {
+        "name": "history",
+        "version": "2.6.1",
+        "sha256": "709a777f7433a118366cf85c020a39ab9e8b58bfdd8e1987c2ba8f76cc2058f4"
+      },
+      {
+        "name": "house",
+        "version": "1.3.0",
+        "sha256": "aef2789f59b5c52cf0120bb721d4878caa7c6776a29e7e18d1622d9f88d0ba13"
+      },
+      {
+        "name": "init",
+        "version": "0.2.1",
+        "sha256": "cd7f7610a488c34703788d9d737502a4c9da1760ad9caa35a9cee92cacd98a0a"
+      },
+      {
+        "name": "legacy-import",
+        "version": "2.0.5",
+        "sha256": "e224ee0ba4a7ba9b746c099f94068b3b0bcab0091ffd97a5eb79f947e24aeba6"
+      },
+      {
+        "name": "market",
+        "version": "2.3.3",
+        "sha256": "f91f7ebecda182cb38a393d8ec20c842812df9102bf08915cd5dcbf3afd15455"
+      },
+      {
+        "name": "no-update-check",
+        "version": "1.0.0",
+        "sha256": "6c6dd68f6577ade9bd5c06109c15b702db06d1b345140d94d4b262d03d3eb38c"
+      },
+      {
+        "name": "online-stats",
+        "version": "0.2.2",
+        "sha256": "73e903f543757e1b3510ae687dfc7f39c4fab9a861f32ad77ad16cff4fa4f345"
+      },
+      {
+        "name": "patch1458",
+        "version": "1.0.2",
+        "sha256": "f412194799d40cb8deeaf44842260b2ae213322cb7eba46c51b36fbf29c79c82"
+      },
+      {
+        "name": "performance",
+        "version": "1.0.1",
+        "sha256": "0987e111a658d9ed733199dccfc43f1dcd510db1ebb63217b9ea15375bdc5308"
+      },
+      {
+        "name": "personal-permissions",
+        "version": "1.0.2",
+        "sha256": "8810ef7b0f427b4bddd82cd12aaf22d2e152d174b29995a4c82add426e598573"
+      },
+      {
+        "name": "promotion",
+        "version": "2.0.3",
+        "sha256": "ed364e4c399df7bb19122bea45c2d40c99574ceeb38c2b8858b7a92f6041bb6f"
+      },
+      {
+        "name": "qq-render",
+        "version": "2.0.0",
+        "sha256": "91d82f9f83c5a0ae32e79b39da0291361ad2e96898c1cbc1ddcfa06ce10197ce"
+      },
+      {
+        "name": "qq-serve",
+        "version": "2.4.1",
+        "sha256": "802a2dfd5a68fffd0bda0e0263e0e7692c67ab7e3f6711eeaed97ba1a76811f3"
+      },
+      {
+        "name": "registration",
+        "version": "2.0.7",
+        "sha256": "80b5f2576fe8b316b3e8a90a604c9bc9d4b506b3b140a78b5931cb7d6fa6ca36"
+      },
+      {
+        "name": "risk-control",
+        "version": "1.0.3",
+        "sha256": "2ca7dfa48fdb022213164d5fd6323e63c91e385cc35ed59cabea5708133a038e"
+      },
+      {
+        "name": "servers",
+        "version": "0.1.3",
+        "sha256": "635b1576bed68a9087262bad4892df1845522ec75c76c18b932e73f0d2faa5f1"
+      },
+      {
+        "name": "shopui",
+        "version": "1.0.4",
+        "sha256": "93b82303f469d989d78d0dd03570712b821a969f0ccc31373bb10d12e8489cf1"
+      },
+      {
+        "name": "status-panel",
+        "version": "2.0.4",
+        "sha256": "62ea4d306a72876eeb529702136395472f05253da9014cd4f1ebab02fc643da7"
+      },
+      {
+        "name": "task-scheduler",
+        "version": "2.0.2",
+        "sha256": "49c33ddd081351db1f7762ba7d715b66a812e237ec73e45f6475f8f4370dd87a"
+      },
+      {
+        "name": "vote",
+        "version": "2.1.2",
+        "sha256": "fcaf6f437518ebca42189f450dcf146163301cbe21e159e4dcf7988391835969"
+      },
+      {
+        "name": "web",
+        "version": "2.0.8",
+        "sha256": "d7ef9b62fc23242f40d9d48538516e7399ad8d9d4bc62bccf9c06796038cad0e"
+      },
+      {
+        "name": "world-info",
+        "version": "1.1.3",
+        "sha256": "a1ca1bf288b0a3237e2e96153127dc1e7387135b2e90486a6b73af20e6a645eb"
+      },
+      {
+        "name": "world-preview",
+        "version": "1.0.1",
+        "sha256": "398e97a2d0b5a7457271f54a8dc648ed3859e6641731bf8975e300c2c872443a"
+      }
+    ],
+    "backendsReady": 40,
+    "browserClientsLoaded": [
+      "account-attributes",
+      "anti-cheat",
+      "apm",
+      "base",
+      "boss-limit",
+      "config-anything",
+      "curfew",
+      "dimensions",
+      "emote-command",
+      "file-manager",
+      "gameplay-settings",
+      "history",
+      "house",
+      "legacy-import",
+      "market",
+      "performance",
+      "personal-permissions",
+      "promotion",
+      "qq-serve",
+      "registration",
+      "risk-control",
+      "shopui",
+      "status-panel",
+      "task-scheduler",
+      "vote",
+      "world-info"
+    ],
+    "checks": [
+      "package checksums and embedded compatibility",
+      "market list compatibility",
+      "actual market installer and guarded loader",
+      "anti-cheat disable and re-enable",
+      "actual Chrome frontend initialization"
+    ],
+    "realGameTested": false
+  },
+  "packageReview": {
+    "result": "passed",
+    "sourceCommit": "0d4203c",
+    "target": {
+      "name": "anti-cheat",
+      "version": "2.3.0",
+      "description": "反作弊：物品与弹幕检测、物品收支日志、反恶性漏洞及防刷保护。文件管理由 file-manager 独立提供，其余旧 TSWeb 管理业务已移除。",
+      "releaseNotes": "物品和弹幕支持独立多配置、默认预设/空白/复制创建与草稿保留；Boss 列表显示规则数量，命令参数编辑与未保存提示更清晰；新增可搜索配置选择器，新建方式、复制来源和名称统一在模态框内完成，适配窄屏内部滚动。",
+      "author": null,
+      "tags": [
+        "反作弊"
+      ],
+      "bundled": false,
+      "hasClient": true,
+      "accessApi": 1,
+      "clientApi": 2,
+      "dll": [
+        "./plugin/*.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/anti-cheat-2.3.0.tgz",
+      "sha256": "8b908b559ef99ee913eb113141446e67fef1f98793c1727bd1a0e3149acfabac",
+      "size": 211109,
+      "publishedAt": "2026-11-04T12:07:31.034Z"
+    },
+    "unchangedMarketEntries": 36,
+    "dllHashes": {
+      "AntiCheat.dll": "dbe3becc1cf22360cb6f0c055c2bcf8f07438ce111b93920f08897a5ad180d9a"
+    },
+    "regression": {
+      "tests": 93,
+      "passed": 93,
+      "failed": 0
+    },
+    "checks": [
+      "reviewed server-scoped preset routes and persistence",
+      "preserved published game DLL byte-for-byte",
+      "packaged runtime matches committed source",
+      "packaged UI matches browser-tested build",
+      "non-target market entries unchanged"
+    ]
+  },
+  "browser": {
+    "actualPackagedModule": true,
+    "cases": [
+      {
+        "kind": "item",
+        "width": 1440,
+        "height": 1000,
+        "theme": "dark",
+        "first": "a424dbfd-5978-4c38-9630-359a7a8dbe8b",
+        "second": "6f7f0296-c072-4215-b7f0-324aed530b46",
+        "popup": {
+          "x": 312,
+          "y": 301.234375,
+          "width": 540,
+          "height": 291.5625
+        },
+        "opaque": "rgb(17, 24, 42)",
+        "errors": []
+      },
+      {
+        "kind": "proj",
+        "width": 1440,
+        "height": 900,
+        "theme": "light",
+        "first": "9d235c69-0285-4760-b8ff-21644c64d141",
+        "second": "2a86608d-dfdc-403b-8580-1c4f8e768c69",
+        "popup": {
+          "x": 312,
+          "y": 301.234375,
+          "width": 540,
+          "height": 291.5625
+        },
+        "opaque": "rgb(255, 255, 255)",
+        "errors": []
+      },
+      {
+        "kind": "item",
+        "width": 390,
+        "height": 844,
+        "theme": "dark",
+        "first": "4ac2fbad-3689-4ab6-849f-4ea2882e223b",
+        "second": "7583fbb5-59a2-4ecf-9d89-4f3998eb03b9",
+        "popup": {
+          "x": 44,
+          "y": 255.625,
+          "width": 330,
+          "height": 291.5625
+        },
+        "opaque": "rgb(17, 24, 42)",
+        "errors": []
+      },
+      {
+        "kind": "item",
+        "width": 320,
+        "height": 740,
+        "theme": "light",
+        "first": "406c8cda-f214-4ac5-9d66-798f64f82c1e",
+        "second": "47f162df-0488-4a3c-b08c-202ebd7ccbc7",
+        "popup": {
+          "x": 12,
+          "y": 255.625,
+          "width": 296,
+          "height": 291.5625
+        },
+        "opaque": "rgb(255, 255, 255)",
+        "errors": []
+      },
+      {
+        "kind": "proj",
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "first": "c360145e-7a77-4932-b158-d972958f11af",
+        "second": "d70eedd4-9db7-4d0a-be0d-76ed759bb893",
+        "popup": {
+          "x": 44,
+          "y": 255.625,
+          "width": 330,
+          "height": 291.5625
+        },
+        "opaque": "rgb(255, 255, 255)",
+        "errors": []
+      }
+    ],
+    "oldItemPickerAndSaveSuccessPreserved": true
+  },
+  "runtimeDeployment": "market release only; no live host or game restart"
+}
