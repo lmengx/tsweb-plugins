@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T14:53:55.921Z",
+  "updated": "2026-11-04T14:59:54.933Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -644,9 +644,9 @@
     },
     {
       "name": "servers",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "description": "TShock 服务器注册表 + REST token 代理 + 命令接口",
-      "releaseNotes": "修复游戏服重启后 REST 已恢复、SSE 却永久停留未连接的问题。降级连接每 30 秒重新探测 SSE，接口就绪后自动恢复部署通道；保留 REST 功能，避免重复并发探测，手动断开会取消探测。无需更新游戏服 DLL 或重启 TShock。",
+      "releaseNotes": "移除自动降级机制：游戏服重启期间保持重连，收到有效 Host SSE 握手才报告完整连接成功。REST 可用性独立保留，SSE 以 1–30 秒退避重试；鉴权或协议错误明确报告。修复仅收到响应头就显示已连接、测试连接覆盖真实状态的问题；手动断开取消所有重连。搭配 web 2.0.10 显示准确状态，无需更新游戏服 DLL。",
       "author": null,
       "tags": [],
       "bundled": true,
@@ -655,10 +655,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/servers-0.1.4.tgz",
-      "sha256": "057c41e741869bf591cc483ef2a1204c4967b378bf3b09d31691c129ef04058c",
-      "size": 23792,
-      "publishedAt": "2026-11-04T14:31:58.051Z"
+      "url": "packages/servers-0.1.5.tgz",
+      "sha256": "3e4a77daf7e7be277b3d47abc1c3a9093002b89457b1f68615c27152863be363",
+      "size": 23876,
+      "publishedAt": "2026-11-04T14:54:56.045Z"
     },
     {
       "name": "shopui",
@@ -750,8 +750,9 @@
     },
     {
       "name": "web",
-      "version": "2.0.6",
+      "version": "2.0.10",
       "description": "TSWeb Vue 3 插件界面宿主",
+      "releaseNotes": "配合 servers 0.1.5 修正连接状态展示：REST 可用而 SSE 尚未握手时显示 SSE 重连中，权限或协议错误显示 SSE 连接错误并提供具体原因，不再把等待 SSE 误显示为 REST 离线。通过插件市场更新宿主前端后刷新页面生效，无需重启游戏服。",
       "author": null,
       "tags": [],
       "bundled": true,
@@ -760,10 +761,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/web-2.0.6.tgz",
-      "sha256": "ec4bd095aef2a0e58120f0ea1d35f7226587c694139fd6b555e33ea437fd4301",
-      "size": 272814,
-      "publishedAt": "2026-11-03T04:57:38.329Z"
+      "url": "packages/web-2.0.10.tgz",
+      "sha256": "9e2e14d0ff95c3f9d3f19ca88cfe1e1b8e356fac74328c8b17a6211da47bf8f6",
+      "size": 277629,
+      "publishedAt": "2026-11-04T14:54:56.733Z"
     },
     {
       "name": "world-info",
