@@ -1,0 +1,174 @@
+{
+  "result": "passed",
+  "releasedAt": "2026-11-04T14:32:42.702Z",
+  "entry": {
+    "name": "servers",
+    "version": "0.1.4",
+    "description": "TShock 服务器注册表 + REST token 代理 + 命令接口",
+    "releaseNotes": "修复游戏服重启后 REST 已恢复、SSE 却永久停留未连接的问题。降级连接每 30 秒重新探测 SSE，接口就绪后自动恢复部署通道；保留 REST 功能，避免重复并发探测，手动断开会取消探测。无需更新游戏服 DLL 或重启 TShock。",
+    "author": null,
+    "tags": [],
+    "bundled": true,
+    "hasClient": false,
+    "accessApi": 1,
+    "dll": [],
+    "requires": [],
+    "deploy": "all",
+    "url": "packages/servers-0.1.4.tgz",
+    "sha256": "057c41e741869bf591cc483ef2a1204c4967b378bf3b09d31691c129ef04058c",
+    "size": 23792,
+    "publishedAt": "2026-11-04T14:31:58.051Z"
+  },
+  "changes": [
+    "index.js",
+    "package.json"
+  ],
+  "indexSha256": "8d9187718d291351106d7b40f7041d80c5cf4278209b0001be161bf3d87bf0ec",
+  "baselineSha256": "26f3d9458f440dda3617febf135c29f3f98aa5e8e9bd0c288ecc803a03852779",
+  "preservedOtherPackages": 36,
+  "verification": {
+    "sourceRegressionTests": 24,
+    "finalPackageUpgradeAndRollbackTests": 2,
+    "failures": 0,
+    "unchangedRuntimeFiles": [
+      "access.js",
+      "console.js",
+      "details.js",
+      "rest-request.js",
+      "uptime.js"
+    ],
+    "automaticSseRecovery": true,
+    "concurrentProbeGuard": true,
+    "disconnectCancelsProbe": true
+  },
+  "gameDllsChanged": false,
+  "installedOnProduction": true,
+  "production": {
+    "verifiedAt": "2026-11-04T14:34:08.128Z",
+    "origin": "http://43.248.3.138:39999",
+    "task": {
+      "id": "be10e659-1925-4743-a646-3d6c32350181",
+      "name": "servers",
+      "action": "update",
+      "version": "0.1.4",
+      "sha256": "057c41e741869bf591cc483ef2a1204c4967b378bf3b09d31691c129ef04058c",
+      "size": 23792,
+      "hasClient": false,
+      "dependencies": [],
+      "installDeps": false,
+      "state": "done",
+      "createdAt": 1793802796910,
+      "refreshRequired": false,
+      "refreshAcknowledged": false,
+      "error": "",
+      "startedAt": 1793802797024,
+      "warning": "服务器管理已更新，请刷新页面；面板连接会自动重新建立",
+      "finishedAt": 1793802798763,
+      "restartServerIds": [],
+      "progress": null
+    },
+    "serversPlugin": [
+      {
+        "name": "servers",
+        "version": "0.1.4",
+        "status": "enabled",
+        "backendState": "ready",
+        "error": null
+      }
+    ],
+    "connections": [
+      {
+        "id": "f0dfccf2-4460-4053-b450-4679f18dfa41",
+        "status": "connected",
+        "hasSse": true,
+        "deploymentError": null,
+        "clientId": "a255fd7e-8921-425d-bf5c-2445ca469582",
+        "events": [
+          {
+            "time": 1793802798689,
+            "type": "sse-connected",
+            "message": "SSE clientId=a255fd7e-8921-425d-bf5c-2445ca469582"
+          },
+          {
+            "time": 1793802798687,
+            "type": "status",
+            "message": "connecting → connected: SSE 长连接已建立"
+          },
+          {
+            "time": 1793802798568,
+            "type": "status",
+            "message": "disconnected → connecting: 开始连接"
+          }
+        ]
+      },
+      {
+        "id": "2d997e7c-7333-4bd4-b25a-e7f5d3c010ab",
+        "status": "connected",
+        "hasSse": true,
+        "deploymentError": null,
+        "clientId": "175ecfcf-6422-4a75-98c5-a954d6860660",
+        "events": [
+          {
+            "time": 1793802798683,
+            "type": "sse-connected",
+            "message": "SSE clientId=175ecfcf-6422-4a75-98c5-a954d6860660"
+          },
+          {
+            "time": 1793802798667,
+            "type": "status",
+            "message": "connecting → connected: SSE 长连接已建立"
+          },
+          {
+            "time": 1793802798569,
+            "type": "status",
+            "message": "disconnected → connecting: 开始连接"
+          }
+        ]
+      }
+    ],
+    "sscPlugins": [
+      {
+        "name": "qq-serve",
+        "version": "2.5.3",
+        "servers": [
+          {
+            "id": "f0dfccf2-4460-4053-b450-4679f18dfa41",
+            "state": "loaded",
+            "phase": "synced",
+            "error": null,
+            "runningHashMatches": true
+          },
+          {
+            "id": "2d997e7c-7333-4bd4-b25a-e7f5d3c010ab",
+            "state": "loaded",
+            "phase": "synced",
+            "error": null,
+            "runningHashMatches": true
+          }
+        ]
+      },
+      {
+        "name": "registration",
+        "version": "2.0.8",
+        "servers": [
+          {
+            "id": "f0dfccf2-4460-4053-b450-4679f18dfa41",
+            "state": "loaded",
+            "phase": "synced",
+            "error": null,
+            "runningHashMatches": true
+          },
+          {
+            "id": "2d997e7c-7333-4bd4-b25a-e7f5d3c010ab",
+            "state": "loaded",
+            "phase": "synced",
+            "error": null,
+            "runningHashMatches": true
+          }
+        ]
+      }
+    ],
+    "gameRestarted": false,
+    "liveGameLoginTested": false
+  }
+}

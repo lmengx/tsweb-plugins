@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T14:16:28.240Z",
+  "updated": "2026-11-04T14:32:42.702Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -641,6 +641,24 @@
       "sha256": "2ca7dfa48fdb022213164d5fd6323e63c91e385cc35ed59cabea5708133a038e",
       "size": 42114,
       "publishedAt": "2026-11-03T04:57:25.409Z"
+    },
+    {
+      "name": "servers",
+      "version": "0.1.4",
+      "description": "TShock 服务器注册表 + REST token 代理 + 命令接口",
+      "releaseNotes": "修复游戏服重启后 REST 已恢复、SSE 却永久停留未连接的问题。降级连接每 30 秒重新探测 SSE，接口就绪后自动恢复部署通道；保留 REST 功能，避免重复并发探测，手动断开会取消探测。无需更新游戏服 DLL 或重启 TShock。",
+      "author": null,
+      "tags": [],
+      "bundled": true,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/servers-0.1.4.tgz",
+      "sha256": "057c41e741869bf591cc483ef2a1204c4967b378bf3b09d31691c129ef04058c",
+      "size": 23792,
+      "publishedAt": "2026-11-04T14:31:58.051Z"
     },
     {
       "name": "shopui",
