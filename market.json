@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T09:52:16.853Z",
+  "updated": "2026-11-04T10:20:28.853Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -574,9 +574,9 @@
     },
     {
       "name": "qq-serve",
-      "version": "2.4.0",
+      "version": "2.4.1",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
-      "releaseNotes": "QQ 主页、账号、服务器与玩家模板归属 QQ 服务；接入通用渲染引擎，OneBot 支持业务能力自定义图片回复并在渲染不可用时回退文字。",
+      "releaseNotes": "OneBot 将投票多页图片合为一条消息，避免逐页刷屏；丢弃已关闭会话排队的事件；修复兼容 HTTP 接口审计未初始化导致拒绝记录丢失，记录请求来源和客户端信息以定位旧机器人。",
       "author": null,
       "tags": [
         "管理工具",
@@ -591,10 +591,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.4.0.tgz",
-      "sha256": "7b552d3eed66e786f865e67323003b1f2277f3106cc7e50b0d076a7c3de50501",
-      "size": 298495,
-      "publishedAt": "2026-11-04T09:51:38.536Z"
+      "url": "packages/qq-serve-2.4.1.tgz",
+      "sha256": "802a2dfd5a68fffd0bda0e0263e0e7692c67ab7e3f6711eeaed97ba1a76811f3",
+      "size": 298917,
+      "publishedAt": "2026-11-04T10:18:55.703Z"
     },
     {
       "name": "registration",
@@ -709,9 +709,9 @@
     },
     {
       "name": "vote",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "description": "玩家投票：网页与 QQ 群参与、游玩时长加权、自主提案和轮次管理",
-      "releaseNotes": "投票插件自带结果卡片、得分条形图与分页模板，按需注册通用渲染引擎；OneBot 查询、投票和提案支持图片回复，缺失或关闭引擎时继续使用文字。",
+      "releaseNotes": "轮次列表和结果区在页面内独立滚动；投票管理新增图片样式与真实结果预览，独立保存主题、强调色、分页数与说明开关；图片按完整选项分组并重复标题与范围。配合 QQ 服务 2.4.1 将多页合为一条回复。",
       "author": null,
       "tags": [
         "QQ管理"
@@ -723,10 +723,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/vote-2.1.0.tgz",
-      "sha256": "a42b57c6b59b847e179d632051becca27d3ac24e867b309b57f953824e9ee7dc",
-      "size": 81952,
-      "publishedAt": "2026-11-04T09:49:17.481Z"
+      "url": "packages/vote-2.1.1.tgz",
+      "sha256": "eb8db5213f245acd2e0a7487bd7aa4033b69b0104320e118dbfff3dd03a4854b",
+      "size": 89889,
+      "publishedAt": "2026-11-04T10:20:28.697Z"
     },
     {
       "name": "web",
