@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T08:18:33.463Z",
+  "updated": "2026-11-04T08:24:02.236Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -272,8 +272,9 @@
     },
     {
       "name": "history",
-      "version": "2.6.0",
+      "version": "2.6.1",
       "description": "地图编辑历史、玩家活动区域与框选回退",
+      "releaseNotes": "世界编辑页面新增记录自动清除时间，默认保留 10 天，可按游戏服调整为 1 至 3650 天并持久保存。后台分批清理超期地图编辑和箱子日志，保护活动查询、回退撤销链及待审查任务；设置使用独立管理权限，清理异常可见并自动重试。",
       "author": null,
       "tags": [
         "管理工具"
@@ -289,10 +290,10 @@
         "world-preview"
       ],
       "deploy": "all",
-      "url": "packages/history-2.6.0.tgz",
-      "sha256": "dff85375ed35b26fc6913d27cbe252448a0ebdacf76aee59f33c0de59f718281",
-      "size": 762744,
-      "publishedAt": "2026-10-29T07:50:31.235Z"
+      "url": "packages/history-2.6.1.tgz",
+      "sha256": "709a777f7433a118366cf85c020a39ab9e8b58bfdd8e1987c2ba8f76cc2058f4",
+      "size": 767369,
+      "publishedAt": "2026-11-04T08:22:09.939Z"
     },
     {
       "name": "house",
