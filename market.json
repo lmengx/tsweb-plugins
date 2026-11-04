@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T09:28:35.458Z",
+  "updated": "2026-11-04T09:52:16.853Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -554,8 +554,9 @@
     },
     {
       "name": "qq-render",
-      "version": "1.2.0",
-      "description": "QQ 消息图片渲染：16:9 主页封面、真实账户状态卡、服务器与玩家分页；深空、像素、奶油三套风格和前端预览。",
+      "version": "2.0.0",
+      "description": "通用图片渲染引擎：插件自定义模板注册、SVG/PNG 转换、并发限制与生命周期清理，不含业务模板。",
+      "releaseNotes": "拆出所有业务模板，提供 registerTemplate/render/rasterize 通用接口；不再依赖 QQ 服务，支持任意插件按需接入和独立热更新。",
       "author": null,
       "tags": [
         "QQ管理"
@@ -564,20 +565,18 @@
       "hasClient": false,
       "accessApi": 1,
       "dll": [],
-      "requires": [
-        "qq-serve"
-      ],
+      "requires": [],
       "deploy": "all",
-      "url": "packages/qq-render-1.2.0.tgz",
-      "sha256": "7caf3be9e1be22928d4bd71322209f5382e26d14c9c9a7c83ca1ffbaa52e8e47",
-      "size": 12083,
-      "publishedAt": "2026-10-31T21:08:33.982Z"
+      "url": "packages/qq-render-2.0.0.tgz",
+      "sha256": "91d82f9f83c5a0ae32e79b39da0291361ad2e96898c1cbc1ddcfa06ce10197ce",
+      "size": 6108,
+      "publishedAt": "2026-11-04T09:51:36.154Z"
     },
     {
       "name": "qq-serve",
-      "version": "2.3.3",
+      "version": "2.4.0",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
-      "releaseNotes": "补齐 OneBot 原生投票查询、投票与提案指令，直接调用投票能力，无需 Koishi 或旧 bot token；保留混合模式防重复回复。",
+      "releaseNotes": "QQ 主页、账号、服务器与玩家模板归属 QQ 服务；接入通用渲染引擎，OneBot 支持业务能力自定义图片回复并在渲染不可用时回退文字。",
       "author": null,
       "tags": [
         "管理工具",
@@ -592,10 +591,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.3.3.tgz",
-      "sha256": "abf5b8cf443d295970e7b076928607d96a7f5a3b8b0f7055bcb8f7cc9ad9adf1",
-      "size": 288849,
-      "publishedAt": "2026-11-04T09:28:35.241Z"
+      "url": "packages/qq-serve-2.4.0.tgz",
+      "sha256": "7b552d3eed66e786f865e67323003b1f2277f3106cc7e50b0d076a7c3de50501",
+      "size": 298495,
+      "publishedAt": "2026-11-04T09:51:38.536Z"
     },
     {
       "name": "registration",
@@ -710,9 +709,9 @@
     },
     {
       "name": "vote",
-      "version": "2.0.3",
+      "version": "2.1.0",
       "description": "玩家投票：网页与 QQ 群参与、游玩时长加权、自主提案和轮次管理",
-      "releaseNotes": "旧投票导入统一移至数据导入插件；提供串行原子导入与无写入预览，支持含空格的轮次标题与编号定位。",
+      "releaseNotes": "投票插件自带结果卡片、得分条形图与分页模板，按需注册通用渲染引擎；OneBot 查询、投票和提案支持图片回复，缺失或关闭引擎时继续使用文字。",
       "author": null,
       "tags": [
         "QQ管理"
@@ -724,10 +723,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/vote-2.0.3.tgz",
-      "sha256": "24cdd286b5e04a6353302436f504ec3e34cf5b8d7ea3cef53a13417ee2fb9b6c",
-      "size": 79310,
-      "publishedAt": "2026-11-04T09:26:49.721Z"
+      "url": "packages/vote-2.1.0.tgz",
+      "sha256": "a42b57c6b59b847e179d632051becca27d3ac24e867b309b57f953824e9ee7dc",
+      "size": 81952,
+      "publishedAt": "2026-11-04T09:49:17.481Z"
     },
     {
       "name": "web",
