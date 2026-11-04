@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T07:40:49.651Z",
+  "updated": "2026-11-04T08:18:33.463Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -115,6 +115,28 @@
       "sha256": "8bd62a2b16fa2fb56be497db7ce9b09ed0d06d4dbe37e960e723f4bac4922741",
       "size": 58926,
       "publishedAt": "2026-11-03T04:57:10.191Z"
+    },
+    {
+      "name": "compat1456",
+      "version": "1.0.0",
+      "description": "为 Terraria 1.4.5.6 客户端提供 1.4.5.7/1.4.5.8 服务端协议兼容；无前端页面。",
+      "releaseNotes": "首次发布无前端 Cordis 插件；补充入站包边界与弹幕所有权检查，并保留 TShock 收包校验。",
+      "author": null,
+      "tags": [
+        "版本兼容"
+      ],
+      "bundled": false,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [
+        "./plugin/Compat1456.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/compat1456-1.0.0.tgz",
+      "sha256": "c64388b22c0d9cbbc0e6c59b732ada92d9e1b4627c91fe43cce4bde3e09ecb40",
+      "size": 16718,
+      "publishedAt": "2026-11-04T08:18:33.036Z"
     },
     {
       "name": "config-anything",
@@ -353,6 +375,28 @@
       "sha256": "44534264edc81407b75bbfb07fd4d9391932ba39a20f33cb58ed63eb0baa459d",
       "size": 56709,
       "publishedAt": "2026-11-04T07:40:48.605Z"
+    },
+    {
+      "name": "no-update-check",
+      "version": "1.0.0",
+      "description": "关闭 TShock 远端更新检查，减少网络失败产生的重复日志；无前端页面。",
+      "releaseNotes": "首次发布无前端 Cordis 插件，支持市场安装、启停与游戏服自动同步。",
+      "author": null,
+      "tags": [
+        "版本兼容"
+      ],
+      "bundled": false,
+      "hasClient": false,
+      "accessApi": 1,
+      "dll": [
+        "./plugin/NoUpdateCheck.dll"
+      ],
+      "requires": [],
+      "deploy": "all",
+      "url": "packages/no-update-check-1.0.0.tgz",
+      "sha256": "6c6dd68f6577ade9bd5c06109c15b702db06d1b345140d94d4b262d03d3eb38c",
+      "size": 5848,
+      "publishedAt": "2026-11-04T08:18:31.246Z"
     },
     {
       "name": "online-stats",
