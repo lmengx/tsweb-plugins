@@ -2,7 +2,7 @@
   "schema": 2,
   "repo": "lmengx/tsweb-plugins",
   "branch": "main",
-  "updated": "2026-11-04T08:35:07.690Z",
+  "updated": "2026-11-04T09:28:35.458Z",
   "mirrors": [
     {
       "id": "cloudflare",
@@ -382,8 +382,9 @@
     },
     {
       "name": "legacy-import",
-      "version": "2.0.4",
-      "description": "导入旧版数据容器：模块注册表（ctx.legacyImport.registerModule，供其它插件贡献自己的导入模块）+ 内置「旧版 QQ 台账」模块（qq-ledger：本件负责解析旧文件格式，落库交回 QQ 服务（qq-serve）的台账契约，绝不绕过其原子落盘与快照下发）",
+      "version": "2.0.5",
+      "description": "旧版数据导入容器：QQ 绑定台账、投票轮次及历史选票；文件来源提示、预览、空库校验和审计，落库交回数据所属插件",
+      "releaseNotes": "新增旧版投票导入模块，支持文件预览、空库检查、正式导入和审计；界面明确旧版 backend/data/votes.json 来源及部署目录差异。",
       "author": null,
       "tags": [
         "QQ管理"
@@ -395,10 +396,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/legacy-import-2.0.4.tgz",
-      "sha256": "e1207130d9ddd7bb3117fb2393f807eefd11476790da3f9d2d746e2eea11db64",
-      "size": 21074,
-      "publishedAt": "2026-10-29T15:20:10.536Z"
+      "url": "packages/legacy-import-2.0.5.tgz",
+      "sha256": "e224ee0ba4a7ba9b746c099f94068b3b0bcab0091ffd97a5eb79f947e24aeba6",
+      "size": 22988,
+      "publishedAt": "2026-11-04T09:26:49.832Z"
     },
     {
       "name": "market",
@@ -574,8 +575,9 @@
     },
     {
       "name": "qq-serve",
-      "version": "2.3.2",
+      "version": "2.3.3",
       "description": "统一 QQ 服务：绑定台账与登录凭据、官方机器人、OneBot 接入、身份补全，单一插件单一入口；图片渲染为独立可选插件 qq-render",
+      "releaseNotes": "补齐 OneBot 原生投票查询、投票与提案指令，直接调用投票能力，无需 Koishi 或旧 bot token；保留混合模式防重复回复。",
       "author": null,
       "tags": [
         "管理工具",
@@ -590,10 +592,10 @@
       ],
       "requires": [],
       "deploy": "all",
-      "url": "packages/qq-serve-2.3.2.tgz",
-      "sha256": "42df1f91164843606d45450e6401b0053ca2ecf927cb56bd240c8ac58bdde3f2",
-      "size": 287571,
-      "publishedAt": "2026-11-03T04:57:22.198Z"
+      "url": "packages/qq-serve-2.3.3.tgz",
+      "sha256": "abf5b8cf443d295970e7b076928607d96a7f5a3b8b0f7055bcb8f7cc9ad9adf1",
+      "size": 288849,
+      "publishedAt": "2026-11-04T09:28:35.241Z"
     },
     {
       "name": "registration",
@@ -708,8 +710,9 @@
     },
     {
       "name": "vote",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "description": "玩家投票：网页与 QQ 群参与、游玩时长加权、自主提案和轮次管理",
+      "releaseNotes": "旧投票导入统一移至数据导入插件；提供串行原子导入与无写入预览，支持含空格的轮次标题与编号定位。",
       "author": null,
       "tags": [
         "QQ管理"
@@ -721,10 +724,10 @@
       "dll": [],
       "requires": [],
       "deploy": "all",
-      "url": "packages/vote-2.0.2.tgz",
-      "sha256": "77ea32e613c9e1efab1bbba731bf445a730d21de925ee26fc10b0c6957763eab",
-      "size": 78984,
-      "publishedAt": "2026-10-29T15:52:25.166Z"
+      "url": "packages/vote-2.0.3.tgz",
+      "sha256": "24cdd286b5e04a6353302436f504ec3e34cf5b8d7ea3cef53a13417ee2fb9b6c",
+      "size": 79310,
+      "publishedAt": "2026-11-04T09:26:49.721Z"
     },
     {
       "name": "web",
